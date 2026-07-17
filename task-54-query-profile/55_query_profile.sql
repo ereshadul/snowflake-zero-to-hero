@@ -1,0 +1,13 @@
+-- Task 54 — Query profile
+-- Category: Performance & cost
+--
+-- Goal: Reading the query profile graph to find the actual bottleneck in a slow query.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

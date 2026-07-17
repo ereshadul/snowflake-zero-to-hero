@@ -1,0 +1,13 @@
+-- Task 60 — Hybrid Tables
+-- Category: Newer table types
+--
+-- Goal: Row-oriented, OLTP-style tables with enforced primary keys and fast point lookups.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

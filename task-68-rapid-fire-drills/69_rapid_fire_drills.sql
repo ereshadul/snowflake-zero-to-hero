@@ -1,0 +1,13 @@
+-- Task 68 — Rapid-fire drills
+-- Category: Cert & interview prep
+--
+-- Goal: Quick-recall drills on syntax and gotchas across everything covered so far.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

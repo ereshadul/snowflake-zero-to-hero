@@ -1,0 +1,13 @@
+-- Task 34 — Stream on multiple tables
+-- Category: Streams
+--
+-- Goal: Coordinating streams across more than one source table.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

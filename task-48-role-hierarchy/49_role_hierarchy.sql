@@ -1,0 +1,13 @@
+-- Task 48 — Role hierarchy
+-- Category: Security
+--
+-- Goal: How Snowflake's built-in and custom roles nest, and how privilege inheritance flows.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

@@ -1,0 +1,13 @@
+-- Task 13 — PURGE
+-- Category: Loading & COPY options
+--
+-- Goal: Auto-deleting staged files after a successful load, and the recovery risk that comes with it.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

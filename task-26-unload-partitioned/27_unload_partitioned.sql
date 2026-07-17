@@ -1,0 +1,13 @@
+-- Task 26 — Partitioned unload
+-- Category: Unloading data
+--
+-- Goal: Using PARTITION BY to fan a single unload out into a folder structure.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

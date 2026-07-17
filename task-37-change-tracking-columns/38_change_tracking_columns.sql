@@ -1,0 +1,13 @@
+-- Task 37 — Change-tracking columns (METADATA$...)
+-- Category: Streams
+--
+-- Goal: Reading METADATA$ACTION/ISUPDATE/ROW_ID to interpret stream output correctly.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

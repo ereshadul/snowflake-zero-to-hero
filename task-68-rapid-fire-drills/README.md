@@ -1,0 +1,18 @@
+# Task 68 — Rapid-fire drills
+
+**Category:** Cert & interview prep
+
+## Goal
+Quick-recall drills on syntax and gotchas across everything covered so far.
+
+## Steps
+1. Run `69_rapid_fire_drills.sql`.
+2. Work through it section by section against your own Snowflake trial
+   — don't just read it.
+3. Answer the understanding check below before moving to the next task.
+
+## Understanding check
+See the bottom of `69_rapid_fire_drills.sql`. Answer by actually running the
+diagnostic queries it points to, not from memory.
+
+*(Status: scaffolded — SQL content not yet written.)*

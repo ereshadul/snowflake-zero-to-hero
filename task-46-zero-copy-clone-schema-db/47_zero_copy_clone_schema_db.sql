@@ -1,0 +1,13 @@
+-- Task 46 — Zero-copy clone (schema/database)
+-- Category: Time Travel & cloning
+--
+-- Goal: Cloning at the schema/database level, e.g. for a full env snapshot.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

@@ -1,0 +1,13 @@
+-- Task 11 — FORCE
+-- Category: Loading & COPY options
+--
+-- Goal: Reloading files Snowflake thinks it already loaded, and why that's normally a bad idea.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

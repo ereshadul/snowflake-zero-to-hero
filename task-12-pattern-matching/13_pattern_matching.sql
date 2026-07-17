@@ -1,0 +1,13 @@
+-- Task 12 — PATTERN
+-- Category: Loading & COPY options
+--
+-- Goal: Loading only a subset of staged files by regex instead of everything in the stage.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

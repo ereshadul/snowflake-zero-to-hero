@@ -1,0 +1,13 @@
+-- Task 53 — Clustering keys
+-- Category: Performance & cost
+--
+-- Goal: Choosing a clustering key and reading clustering depth to judge if it's helping.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

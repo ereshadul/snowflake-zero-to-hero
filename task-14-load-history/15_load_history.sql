@@ -1,0 +1,13 @@
+-- Task 14 — Load history (COPY_HISTORY / LOAD_HISTORY)
+-- Category: Loading & COPY options
+--
+-- Goal: Auditing what got loaded, when, and whether it succeeded, after the fact.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

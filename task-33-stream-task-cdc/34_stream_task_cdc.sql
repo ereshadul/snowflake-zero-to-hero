@@ -1,0 +1,13 @@
+-- Task 33 — Stream + Task CDC pattern
+-- Category: Streams
+--
+-- Goal: Wiring a stream and a task together into a self-driving CDC pipeline.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

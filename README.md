@@ -17,16 +17,28 @@ they're not optional, they're where the actual learning happens.
   yourself instead of using the sample.
 
 ## Tasks
+69 tasks total, one atomic concept each, grouped into 12 categories.
+Tasks 1-3 are fully written; 4-69 are scaffolded (README + SQL stub
+with a goal and TODOs) and get filled in as we work through them —
+see the open [issues](../../issues) for tracking.
+
 | # | Folder | What it covers |
 |---|--------|----------------|
 | 1 | `task-01-upload-csv/` | Internal stages, file formats, `COPY INTO`, `ON_ERROR`/`VALIDATION_MODE`, loading messy real-world data |
 | 2 | `task-02-generate-huge-data/` | `GENERATOR()`/`SEQ4()` — synthesizing large datasets with pure SQL, no file needed |
 | 3 | `task-03-scheduler-continuous-data/` | Snowflake Tasks — scheduling SQL to run repeatedly, warehouse/cost implications |
-
-More tasks (Streams/CDC, Time Travel & cloning, RBAC & masking,
-materialized views & clustering, Snowpipe, unloading data, Hybrid/
-Dynamic/Event/Iceberg tables, dbt, Data Vault modeling, CI/CD, Cortex,
-and interview prep) get added the same way as we work through them.
+| 4-15 | `task-04-*` … `task-15-*` | Loading & `COPY INTO` options — `ON_ERROR` variants, `RETURN_FAILED_ONLY`, `SIZE_LIMIT`, `TRUNCATECOLUMNS`, `FORCE`, `PATTERN`, `PURGE`, load history, transforming data mid-COPY |
+| 16-21 | `task-16-*` … `task-21-*` | Semi-structured data — `OBJECT`, `ARRAY`, `VARIANT`, `FLATTEN`, querying Parquet directly |
+| 22-26 | `task-22-*` … `task-26-*` | Unloading data — CSV/JSON/Parquet unload, unload options, partitioned unload |
+| 27-30 | `task-27-*` … `task-30-*` | Snowpipe — internal-stage pipe, auto-ingest vs. manual refresh, monitoring, cost |
+| 31-37 | `task-31-*` … `task-37-*` | Streams — STANDARD/APPEND-ONLY, stream+task CDC, streams on views/multiple tables, change-tracking columns |
+| 38-42 | `task-38-*` … `task-42-*` | Tasks, deeper — triggered tasks, DAGs, `WHEN`, monitoring, serverless vs. warehouse-backed |
+| 43-47 | `task-43-*` … `task-47-*` | Time Travel & cloning — `AT`/`BEFORE`, `UNDROP`, zero-copy clone, retention & storage cost |
+| 48-52 | `task-48-*` … `task-52-*` | Security — role hierarchy, custom roles/grants, row access policies, dynamic data masking, network policies |
+| 53-58 | `task-53-*` … `task-58-*` | Performance & cost — clustering keys, query profile, result caching, warehouse scaling, resource monitors, materialized views |
+| 59-62 | `task-59-*` … `task-62-*` | Newer table types — Dynamic, Hybrid, Event, Iceberg tables |
+| 63-66 | `task-63-*` … `task-66-*` | Ecosystem — dbt, Data Vault modeling, CI/CD, Cortex |
+| 67-69 | `task-67-*` … `task-69-*` | Cert & interview prep — SnowPro Core review, rapid-fire drills, mock interview |
 
 ## Why no data files are committed here
 Generated CSVs are large and reproducible from `gen_iot_data.py` — see

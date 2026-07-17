@@ -1,0 +1,13 @@
+-- Task 44 — UNDROP
+-- Category: Time Travel & cloning
+--
+-- Goal: Recovering a dropped table/schema/database within its retention window.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

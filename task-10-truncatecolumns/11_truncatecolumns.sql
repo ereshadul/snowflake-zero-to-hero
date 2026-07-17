@@ -1,0 +1,13 @@
+-- Task 10 — TRUNCATECOLUMNS
+-- Category: Loading & COPY options
+--
+-- Goal: Silently truncating oversized string values instead of erroring the load.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

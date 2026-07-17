@@ -1,0 +1,13 @@
+-- Task 4 — ON_ERROR = ABORT_STATEMENT
+-- Category: Loading & COPY options
+--
+-- Goal: How ABORT_STATEMENT halts the whole COPY on the first bad row, and when you'd actually want that over a more forgiving mode.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

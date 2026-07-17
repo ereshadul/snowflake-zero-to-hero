@@ -1,0 +1,13 @@
+-- Task 69 — Mock interview simulation
+-- Category: Cert & interview prep
+--
+-- Goal: A simulated Sr. DBE interview covering design/tradeoff questions, not just syntax.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

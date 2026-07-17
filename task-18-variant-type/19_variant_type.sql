@@ -1,0 +1,13 @@
+-- Task 18 — VARIANT data type
+-- Category: Semi-structured data
+--
+-- Goal: The type that holds arbitrary JSON and how dot/bracket notation traverses it.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

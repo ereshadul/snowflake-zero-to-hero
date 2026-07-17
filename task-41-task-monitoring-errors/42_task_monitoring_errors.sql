@@ -1,0 +1,13 @@
+-- Task 41 — Task monitoring & error handling
+-- Category: Tasks, deeper
+--
+-- Goal: Inspecting task run history and handling failures in a DAG.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

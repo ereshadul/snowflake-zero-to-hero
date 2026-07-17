@@ -1,0 +1,13 @@
+-- Task 42 — Serverless vs. warehouse-backed tasks
+-- Category: Tasks, deeper
+--
+-- Goal: Choosing between Snowflake-managed compute and your own warehouse for a task.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO
