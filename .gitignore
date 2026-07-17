@@ -1,0 +1,9 @@
+# Large generated data files never belong in git — regenerate them
+# with the scripts instead (see task-01-upload-csv/gen_iot_data.py).
+# The tiny 200-row sample is kept as a tracked reference file.
+*.csv
+*.csv.gz
+!**/*_SAMPLE.csv
+*.log
+__pycache__/
+*.pyc
