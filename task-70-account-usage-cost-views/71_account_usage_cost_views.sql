@@ -1,0 +1,16 @@
+-- Task 70 — ACCOUNT_USAGE cost views
+-- Category: FinOps
+--
+-- Goal: Querying WAREHOUSE_METERING_HISTORY, METERING_DAILY_HISTORY,
+-- and QUERY_HISTORY in SNOWFLAKE.ACCOUNT_USAGE to see exactly where
+-- credits actually went, not just what a warehouse is configured to
+-- cost.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

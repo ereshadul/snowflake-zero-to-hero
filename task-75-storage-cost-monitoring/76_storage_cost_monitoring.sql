@@ -1,0 +1,15 @@
+-- Task 75 — Storage cost monitoring
+-- Category: FinOps
+--
+-- Goal: Querying STORAGE_USAGE and TABLE_STORAGE_METRICS to see how
+-- much you're paying for active data vs. Time Travel vs. Fail-safe
+-- vs. clones -- and which of those is actually the expensive one.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO
