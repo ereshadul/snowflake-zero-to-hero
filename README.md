@@ -22,9 +22,8 @@ ordered so foundational concepts (stages, table types, constraints)
 come before the things that depend on them. Tasks 1-4 are fully
 written; the rest are scaffolded (README + SQL stub with a goal and
 TODOs) and get filled in as we work through them — see the open
-[issues](../../issues) for tracking (issue numbers/titles predate this
-reordering and reference the old task numbers — the folder paths in
-each issue body are still accurate).
+[issues](../../issues) for tracking, kept in sync with the task
+numbers below.
 
 Tasks 5-9 and 32-36 were added after cross-checking the roadmap
 against a set of real Snowflake interview questions, then moved up to
