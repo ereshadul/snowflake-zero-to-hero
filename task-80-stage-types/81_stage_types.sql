@@ -1,0 +1,13 @@
+-- Task 80 — Internal stage types
+-- Category: Stages & File Management
+--
+-- Goal: The three kinds of internal stage -- user (@~), table (@%table), and named -- and when project work actually calls for each.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

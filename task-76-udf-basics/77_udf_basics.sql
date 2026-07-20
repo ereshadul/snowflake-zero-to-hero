@@ -1,0 +1,13 @@
+-- Task 76 — UDF basics & supported languages
+-- Category: Programmability
+--
+-- Goal: What a UDF is and which languages Snowflake supports (SQL, JavaScript, Python, Java, Scala) -- and what a UDF fundamentally can and can't do (no DDL/DML side effects).
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

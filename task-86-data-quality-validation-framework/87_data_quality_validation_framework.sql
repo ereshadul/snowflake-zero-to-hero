@@ -1,0 +1,13 @@
+-- Task 86 — A repeatable data quality/validation framework
+-- Category: Data Integrity & Quality
+--
+-- Goal: Designing a repeatable validation/QC process around a load -- combining VALIDATION_MODE, post-load checks, and alerting into one pattern instead of ad hoc queries.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

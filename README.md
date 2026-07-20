@@ -17,10 +17,19 @@ they're not optional, they're where the actual learning happens.
   yourself instead of using the sample.
 
 ## Tasks
-75 tasks total, one atomic concept each, grouped into 13 categories.
-Tasks 1-3 are fully written; 4-75 are scaffolded (README + SQL stub
-with a goal and TODOs) and get filled in as we work through them —
-see the open [issues](../../issues) for tracking.
+86 tasks total, one atomic concept each, grouped into 17 categories.
+Tasks 1-4 are fully written; the rest are scaffolded (README + SQL
+stub with a goal and TODOs) and get filled in as we work through
+them — see the open [issues](../../issues) for tracking.
+
+Tasks 76-86 were added after cross-checking the roadmap against a set
+of real Snowflake interview questions — they fill gaps the original
+12-category plan missed (UDFs/stored procedures, table types, stage
+fundamentals, notifications, constraints, data quality). Deliberately
+excluded: anything requiring an AWS/Azure/GCP account (storage
+integrations, external stages) and third-party orchestrators like
+Airflow — both are out of scope per this repo's no-external-cloud,
+Snowflake-native design.
 
 | # | Folder | What it covers |
 |---|--------|----------------|
@@ -40,6 +49,10 @@ see the open [issues](../../issues) for tracking.
 | 63-66 | `task-63-*` … `task-66-*` | Ecosystem — dbt, Data Vault modeling, CI/CD, Cortex |
 | 67-69 | `task-67-*` … `task-69-*` | Cert & interview prep — SnowPro Core review, rapid-fire drills, mock interview |
 | 70-75 | `task-70-*` … `task-75-*` | FinOps — ACCOUNT_USAGE cost views, query tagging/cost attribution, warehouse right-sizing methodology, AUTO_SUSPEND tuning, Budgets & alerts, storage cost monitoring |
+| 76-78 | `task-76-*` … `task-78-*` | Programmability — UDF basics & supported languages, stored procedures vs. UDFs, Notification Integrations & emailing from Snowflake |
+| 79 | `task-79-transient-temporary-permanent-tables/` | PERMANENT vs. TRANSIENT vs. TEMPORARY tables |
+| 80-81 | `task-80-*` … `task-81-*` | Stages & File Management — internal stage types, `PUT`/`GET`/`REMOVE` commands |
+| 82-86 | `task-82-*` … `task-86-*` | Data Integrity & Quality — `CHANGE_TRACKING`/`CHANGES()`, primary key generation, constraint enforcement, table diffing, a repeatable data-quality/validation framework |
 
 ## Why no data files are committed here
 Generated CSVs are large and reproducible from `gen_iot_data.py` — see

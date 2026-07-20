@@ -1,0 +1,13 @@
+-- Task 77 — Stored procedures vs. UDFs
+-- Category: Programmability
+--
+-- Goal: Why TRUNCATE (or any DDL/DML) requires a stored procedure, not a UDF, and when to reach for each.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

@@ -1,0 +1,13 @@
+-- Task 82 — CHANGE_TRACKING & the CHANGES() clause
+-- Category: Data Integrity & Quality
+--
+-- Goal: CHANGE_TRACKING = TRUE and the CHANGES() clause -- tracking a table's history without creating a Stream object, and when that's the better fit.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO
