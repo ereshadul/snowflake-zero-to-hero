@@ -1,0 +1,13 @@
+-- Task 26 — Querying Parquet directly
+-- Category: Semi-structured data
+--
+-- Goal: Querying a staged Parquet file without loading it into a table first.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

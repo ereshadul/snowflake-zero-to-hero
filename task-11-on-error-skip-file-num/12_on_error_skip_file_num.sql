@@ -1,0 +1,13 @@
+-- Task 11 — ON_ERROR = SKIP_FILE_<num>
+-- Category: Loading & COPY options
+--
+-- Goal: Tolerating up to N bad rows per file before Snowflake gives up on that file.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

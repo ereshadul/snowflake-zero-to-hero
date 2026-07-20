@@ -1,0 +1,13 @@
+-- Task 42 — APPEND-ONLY stream
+-- Category: Streams
+--
+-- Goal: Tracking only inserts, cheaper than a STANDARD stream when deletes/updates don't matter.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

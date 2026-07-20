@@ -1,0 +1,13 @@
+-- Task 45 — Stream on a view
+-- Category: Streams
+--
+-- Goal: Change tracking on a view instead of a base table.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

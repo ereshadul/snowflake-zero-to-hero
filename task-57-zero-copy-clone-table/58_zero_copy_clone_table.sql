@@ -1,0 +1,13 @@
+-- Task 57 — Zero-copy clone (table)
+-- Category: Time Travel & cloning
+--
+-- Goal: Cloning a table instantly without copying storage.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

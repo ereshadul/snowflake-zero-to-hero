@@ -1,0 +1,13 @@
+-- Task 68 — Warehouse scaling up vs. out
+-- Category: Performance & cost
+--
+-- Goal: Bigger warehouse (scale up) vs. multi-cluster (scale out) for different bottlenecks.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

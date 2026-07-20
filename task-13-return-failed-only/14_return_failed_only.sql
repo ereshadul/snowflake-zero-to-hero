@@ -1,0 +1,13 @@
+-- Task 13 — RETURN_FAILED_ONLY
+-- Category: Loading & COPY options
+--
+-- Goal: Getting COPY INTO to report only the files/rows that failed, not a full success dump.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

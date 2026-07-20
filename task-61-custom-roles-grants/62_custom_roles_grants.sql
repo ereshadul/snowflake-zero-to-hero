@@ -1,0 +1,13 @@
+-- Task 61 — Custom roles & grants
+-- Category: Security
+--
+-- Goal: Creating a custom role and granting it object and role privileges.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

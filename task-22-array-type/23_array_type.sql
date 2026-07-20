@@ -1,0 +1,13 @@
+-- Task 22 — ARRAY data type
+-- Category: Semi-structured data
+--
+-- Goal: Storing and querying ordered lists natively with ARRAY.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

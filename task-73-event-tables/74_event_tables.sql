@@ -1,0 +1,13 @@
+-- Task 73 — Event Tables
+-- Category: Newer table types
+--
+-- Goal: The special table type that captures logs/traces from procedures and functions.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

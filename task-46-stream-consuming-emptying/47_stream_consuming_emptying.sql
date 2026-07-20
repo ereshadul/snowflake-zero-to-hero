@@ -1,0 +1,13 @@
+-- Task 46 — Consuming/emptying a stream
+-- Category: Streams
+--
+-- Goal: What actually advances a stream's offset, and how to avoid accidentally consuming it.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

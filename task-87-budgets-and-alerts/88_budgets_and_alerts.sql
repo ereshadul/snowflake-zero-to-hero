@@ -1,0 +1,15 @@
+-- Task 87 — Snowflake Budgets & spend notifications
+-- Category: FinOps
+--
+-- Goal: Setting a spend threshold with Snowflake Budgets and wiring
+-- up a notification so you find out about a cost spike from an
+-- alert, not from the bill.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

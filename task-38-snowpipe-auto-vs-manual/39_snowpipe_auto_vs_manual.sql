@@ -1,0 +1,13 @@
+-- Task 38 — Auto-ingest vs. manual refresh
+-- Category: Snowpipe
+--
+-- Goal: The difference between event-driven auto-ingest and manually refreshing a pipe.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

@@ -1,0 +1,13 @@
+-- Task 64 — Network policies (conceptual)
+-- Category: Security
+--
+-- Goal: IP allow/block lists at the account or user level (conceptual, since this lab has no VPC).
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

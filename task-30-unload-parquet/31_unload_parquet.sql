@@ -1,0 +1,13 @@
+-- Task 30 — Unload to Parquet
+-- Category: Unloading data
+--
+-- Goal: Unloading query results as Parquet.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

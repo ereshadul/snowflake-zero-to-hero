@@ -1,0 +1,13 @@
+-- Task 8 — What constraints Snowflake actually enforces
+-- Category: Data Integrity & Quality
+--
+-- Goal: What Snowflake actually validates for PRIMARY KEY, FOREIGN KEY, UNIQUE, and NOT NULL constraints, and what's purely documentation the optimizer trusts but never checks.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

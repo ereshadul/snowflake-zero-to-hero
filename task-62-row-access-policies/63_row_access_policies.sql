@@ -1,0 +1,13 @@
+-- Task 62 — Row access policies
+-- Category: Security
+--
+-- Goal: Restricting which rows a role can see with a row access policy.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

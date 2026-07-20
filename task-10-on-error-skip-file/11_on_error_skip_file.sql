@@ -1,0 +1,13 @@
+-- Task 10 — ON_ERROR = SKIP_FILE
+-- Category: Loading & COPY options
+--
+-- Goal: Skipping an entire file the moment it hits an error, vs. skipping just the bad rows.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

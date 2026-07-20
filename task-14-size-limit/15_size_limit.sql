@@ -1,0 +1,13 @@
+-- Task 14 — SIZE_LIMIT
+-- Category: Loading & COPY options
+--
+-- Goal: Capping how much data a single COPY INTO will ingest in one call.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

@@ -1,0 +1,16 @@
+-- Task 85 — A repeatable warehouse right-sizing methodology
+-- Category: FinOps
+--
+-- Goal: Formalize the SMALL-vs-MEDIUM test from Task 2 into a
+-- repeatable process: when a bigger warehouse actually pays for
+-- itself, and how to tell from the query profile instead of
+-- guessing.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

@@ -1,0 +1,13 @@
+-- Task 29 — Unload to JSON
+-- Category: Unloading data
+--
+-- Goal: Unloading query results as newline-delimited JSON.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

@@ -1,0 +1,16 @@
+-- Task 86 — Tuning AUTO_SUSPEND vs. cold-start cost
+-- Category: FinOps
+--
+-- Goal: The tradeoff between a short AUTO_SUSPEND (saves idle
+-- credits, but pays repeated resume latency) and a long one (stays
+-- warm, but burns credits doing nothing) -- tuned against a real
+-- workload's query spacing.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

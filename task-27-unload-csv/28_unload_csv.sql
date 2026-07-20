@@ -1,0 +1,13 @@
+-- Task 27 — Unload to CSV
+-- Category: Unloading data
+--
+-- Goal: COPY INTO <location> to push a table/query result out to CSV.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO
