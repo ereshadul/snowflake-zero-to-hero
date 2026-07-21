@@ -5,6 +5,11 @@
 ## Goal
 Controlling file splitting, headers, and overwrite behavior on unload.
 
+**Real-world scenario:** Task 55's unload left two open questions —
+why did it produce more than one file for 8 rows, and why was there
+no header row? A downstream tool needs exactly one CSV file with
+column headers; this task is how you actually get that.
+
 ## Steps
 1. Run `57_unload_options.sql`.
 2. Work through it section by section against your own Snowflake trial
@@ -12,7 +17,6 @@ Controlling file splitting, headers, and overwrite behavior on unload.
 3. Answer the understanding check below before moving to the next task.
 
 ## Understanding check
-See the bottom of `57_unload_options.sql`. Answer by actually running the
-diagnostic queries it points to, not from memory.
-
-*(Status: scaffolded — SQL content not yet written.)*
+See the bottom of `57_unload_options.sql` — three questions on the
+tradeoff of forcing SINGLE = TRUE, OVERWRITE's actual default, and
+whether MAX_FILE_SIZE is an exact or approximate target.
