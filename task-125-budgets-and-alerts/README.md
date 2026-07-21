@@ -8,13 +8,13 @@ notification so you find out about a cost spike from an alert, not
 from the bill.
 
 ## Steps
-1. Run `116_budgets_and_alerts.sql`.
+1. Run `126_budgets_and_alerts.sql`.
 2. Work through it section by section against your own Snowflake trial
    — don't just read it.
 3. Answer the understanding check below before moving to the next task.
 
 ## Understanding check
-See the bottom of `116_budgets_and_alerts.sql`. Answer by actually
-running the diagnostic queries it points to, not from memory.
-
-*(Status: scaffolded — SQL content not yet written.)*
+See the bottom of `126_budgets_and_alerts.sql` — three questions on
+Budgets vs. Resource Monitors (notify-only vs. suspend), spanning
+multiple cost sources in one view, and why you'd still need Task 122's
+tagging to explain a spend spike.

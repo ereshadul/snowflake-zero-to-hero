@@ -10,13 +10,13 @@ cost. This is the difference between guessing at cost and measuring
 it.
 
 ## Steps
-1. Run `112_account_usage_cost_views.sql`.
+1. Run `122_account_usage_cost_views.sql`.
 2. Work through it section by section against your own Snowflake trial
    — don't just read it.
 3. Answer the understanding check below before moving to the next task.
 
 ## Understanding check
-See the bottom of `112_account_usage_cost_views.sql`. Answer by actually
-running the diagnostic queries it points to, not from memory.
-
-*(Status: scaffolded — SQL content not yet written.)*
+See the bottom of `122_account_usage_cost_views.sql` — three questions
+on what non-warehouse spend shows up in METERING_DAILY_HISTORY,
+ACCOUNT_USAGE's reporting lag, and why elapsed time alone doesn't tell
+you credit cost.

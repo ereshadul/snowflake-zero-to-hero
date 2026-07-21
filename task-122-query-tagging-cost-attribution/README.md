@@ -8,13 +8,13 @@ a team, project, or workload — the chargeback/showback pattern real
 platform teams use to answer "who's actually spending our credits."
 
 ## Steps
-1. Run `113_query_tagging_cost_attribution.sql`.
+1. Run `123_query_tagging_cost_attribution.sql`.
 2. Work through it section by section against your own Snowflake trial
    — don't just read it.
 3. Answer the understanding check below before moving to the next task.
 
 ## Understanding check
-See the bottom of `113_query_tagging_cost_attribution.sql`. Answer by
-actually running the diagnostic queries it points to, not from memory.
-
-*(Status: scaffolded — SQL content not yet written.)*
+See the bottom of `123_query_tagging_cost_attribution.sql` — three
+questions on trusting session-set tags vs. admin-assigned object tags,
+attributing cost when teams share a warehouse, and how tagging differs
+in purpose from a resource monitor.

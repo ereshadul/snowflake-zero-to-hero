@@ -8,13 +8,13 @@ you're paying for active data vs. Time Travel vs. Fail-safe vs.
 clones — and which of those is actually the expensive one.
 
 ## Steps
-1. Run `117_storage_cost_monitoring.sql`.
+1. Run `127_storage_cost_monitoring.sql`.
 2. Work through it section by section against your own Snowflake trial
    — don't just read it.
 3. Answer the understanding check below before moving to the next task.
 
 ## Understanding check
-See the bottom of `117_storage_cost_monitoring.sql`. Answer by actually
-running the diagnostic queries it points to, not from memory.
-
-*(Status: scaffolded — SQL content not yet written.)*
+See the bottom of `127_storage_cost_monitoring.sql` — three questions
+on whether Fail-safe retention is tunable, whose storage a diverged
+clone's rows count against, and whether compute or storage is more
+likely to dominate this lab's own bill.
