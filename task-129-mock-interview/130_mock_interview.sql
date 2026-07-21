@@ -1,13 +1,137 @@
+-- ============================================================
 -- Task 129 — Mock interview simulation
 -- Category: Cert & interview prep
---
--- Goal: A simulated Sr. DBE interview covering design/tradeoff questions, not just syntax.
---
--- TODO: write the walkthrough SQL for this task.
+-- This is the LAST task in the lab (0-129). Tasks 127-128 tested
+-- recall. This one tests JUDGMENT -- the kind of open-ended
+-- design/tradeoff question a Sr. Snowflake DBE interview actually
+-- asks, where there's no single "correct" syntax to write down, only
+-- a defensible reasoning process. Answer each question OUT LOUD, as
+-- if to an interviewer, before reading the "what a strong answer
+-- covers" notes.
+-- ============================================================
+
+-- ------------------------------------------------------------
+-- QUESTION 1 (Architecture/Design)
+-- "We're ingesting IoT sensor data that arrives messy -- some rows
+-- have garbage timestamps or non-numeric readings. Walk me through
+-- how you'd design the landing-to-curated pipeline."
+-- ------------------------------------------------------------
+-- A strong answer covers: land everything as loosely-typed STRING/
+-- VARIANT (Task 1, Task 114's Bronze layer) rather than rejecting bad
+-- rows at load time; use TRY_TO_* casts in a Silver transformation
+-- step (Task 104) so garbage rows are filtered deliberately, not
+-- silently dropped by a COPY INTO error; keep the raw layer around for
+-- replay/audit. Bonus: mentions clustering the curated table by
+-- (sensor_id, event_timestamp) for the time-series access pattern
+-- (Task 93).
+
+-- ------------------------------------------------------------
+-- QUESTION 2 (Performance/Cost)
+-- "A dashboard is slow. Before you touch anything, what do you check,
+-- in what order?"
+-- ------------------------------------------------------------
+-- A strong answer covers: Query Profile FIRST (Task 94) to find out
+-- WHERE time is going (spilling to storage? full table scan? join
+-- explosion?) rather than reflexively upsizing the warehouse; check
+-- for QUEUING specifically (Task 96, Task 123) to distinguish a
+-- single-query speed problem from a concurrency problem; only THEN
+-- consider warehouse size (scale up) vs. multi-cluster (scale out) --
+-- and always convert any proposed fix into an actual credit-cost
+-- comparison (Task 123), not just wall-clock time.
+
+-- ------------------------------------------------------------
+-- QUESTION 3 (Incremental Processing)
+-- "How would you build a pipeline that only processes new rows each
+-- run, and what could silently go wrong with it?"
+-- ------------------------------------------------------------
+-- A strong answer covers: Streams + Tasks (Tasks 69-82) or a dbt
+-- incremental model (Task 109) as the two main options, and can
+-- explain the actual difference (dbt automates the MERGE + "does the
+-- table exist yet" logic; Streams+Tasks is hand-rolled but more
+-- controllable). Names the SPECIFIC failure mode: a timestamp
+-- watermark missing LATE-ARRIVING rows that show up after the
+-- watermark has already moved past their timestamp (Task 81) --
+-- this is the answer that separates "knows the syntax" from "has been
+-- burned by this in production."
+
+-- ------------------------------------------------------------
+-- QUESTION 4 (Security/Governance)
+-- "A table has columns that need to be hidden from most roles but
+-- visible to a compliance team. How do you implement that, and what's
+-- a common mistake people make?"
+-- ------------------------------------------------------------
+-- A strong answer covers: dynamic data masking (Task 88-92) for
+-- column-level restriction, row access policies for row-level. The
+-- common mistake: assuming masking hides a value from EVERY angle --
+-- but a masked column can still be matched against in a WHERE clause
+-- by an unauthorized role in some configurations, so masking alone
+-- isn't a substitute for actually restricting query access if the
+-- underlying values themselves are sensitive enough to leak through
+-- inference.
+
+-- ------------------------------------------------------------
+-- QUESTION 5 (Modeling)
+-- "When would you reach for a star schema versus Data Vault for a new
+-- subject area?"
+-- ------------------------------------------------------------
+-- A strong answer covers: star schema (Task 115) when the business
+-- questions are relatively stable and query simplicity/BI-tool
+-- friendliness matters most; Data Vault (Task 116) when the SOURCE
+-- SYSTEMS are unstable or numerous and need to be integrated flexibly
+-- without re-architecting existing Hubs/Satellites every time a new
+-- relationship appears. Bonus: mentions that these aren't mutually
+-- exclusive -- a Data Vault can feed a star schema as a presentation
+-- layer on top.
+
+-- ------------------------------------------------------------
+-- QUESTION 6 (Recovery/DR)
+-- "Someone just ran a DELETE with no WHERE clause on a production
+-- table. Walk me through recovery, and how you'd prevent it next
+-- time."
+-- ------------------------------------------------------------
+-- A strong answer covers: Time Travel first (AT/BEFORE a timestamp or
+-- the query ID of the bad DELETE, Tasks 83-87) to either query the
+-- pre-DELETE state or restore it via CREATE TABLE ... AS SELECT ...
+-- AT(...); mentions UNDROP is the WRONG tool here (the table wasn't
+-- dropped) -- confusing the two is a real interview tell. For
+-- prevention: mentions RBAC scoping (limiting who has DELETE on
+-- production tables) over relying on Time Travel as a safety net
+-- after the fact.
+
+-- ------------------------------------------------------------
+-- QUESTION 7 (Cost Accountability)
+-- "Finance says the Snowflake bill doubled last month. How do you find
+-- out why?"
+-- ------------------------------------------------------------
+-- A strong answer covers: METERING_DAILY_HISTORY first (Task 121) to
+-- see whether it's compute or a serverless feature (Snowpipe,
+-- clustering) driving it; drill into WAREHOUSE_METERING_HISTORY per
+-- warehouse; check query tags/object tags (Task 122) to attribute
+-- spend to a team; check STORAGE_USAGE/TABLE_STORAGE_METRICS (Task
+-- 126) in case it's actually Time Travel/Fail-safe/clone storage
+-- creeping up, not compute at all. A weak answer jumps straight to
+-- "resize warehouses down" without measuring where the money went
+-- first.
 
 -- ============================================================
--- Understanding check (answer after running the above)
+-- UNDERSTANDING CHECK (final task in the lab):
+--
+-- 1. Pick the question above where your out-loud answer was WEAKEST.
+--    Go back to the specific task(s) referenced in that question's
+--    notes and re-run the actual SQL, then re-answer the question from
+--    scratch.
+--
+-- 2. Every "strong answer" here names a SPECIFIC task/mechanism, not
+--    just a vague concept ("use Time Travel" vs. "use AT/BEFORE with
+--    the bad query's ID, not UNDROP, since the table wasn't dropped").
+--    Why does that level of specificity matter more in a Sr. DBE
+--    interview than it would in a general software engineering
+--    interview?
+--
+-- 3. You've now worked through 130 tasks (0-129), from setting up an
+--    account (Task 0) through this mock interview. If you had to name
+--    the THREE tasks/concepts from this entire lab you'd most want
+--    fresh in your memory walking into a real interview tomorrow,
+--    which three would you pick, and why those specifically over
+--    everything else covered?
 -- ============================================================
--- 1. TODO
--- 2. TODO
--- 3. TODO

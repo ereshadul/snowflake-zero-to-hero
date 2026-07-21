@@ -1,13 +1,143 @@
+-- ============================================================
 -- Task 127 — SnowPro Core review
 -- Category: Cert & interview prep
+-- About this category: Tasks 127-129 don't introduce new Snowflake
+-- features -- they test whether the previous 127 tasks actually stuck.
+-- Answer each question yourself BEFORE reading the answer key, and if
+-- you're unsure, go re-run the referenced task rather than guess.
+-- ============================================================
+
+-- ------------------------------------------------------------
+-- DOMAIN: Snowflake architecture
+-- ------------------------------------------------------------
+-- Q1. True or false: compute and storage scale independently in
+--     Snowflake's architecture, and a warehouse being resized/suspended
+--     has zero effect on whether data is still queryable by another
+--     warehouse. (See Task 2, Task 96.)
 --
--- Goal: Working through SnowPro Core exam-style questions against concepts from earlier tasks.
+-- Q2. What are Snowflake's three architecture layers, and which layer
+--     does a virtual warehouse belong to? (Cloud services, compute,
+--     storage.)
+
+-- ------------------------------------------------------------
+-- DOMAIN: Account access and security
+-- ------------------------------------------------------------
+-- Q3. Does GRANT ... ON FUTURE TABLES IN SCHEMA apply to tables that
+--     already exist in that schema at the time of the grant, or only
+--     to tables created AFTER the grant is issued? (See Tasks 88-92.)
 --
--- TODO: write the walkthrough SQL for this task.
+-- Q4. A row access policy and a dynamic data masking policy both
+--     restrict what a query sees. What's the difference in WHAT they
+--     restrict -- entire rows, or specific column values? (See Tasks
+--     88-92.)
+
+-- ------------------------------------------------------------
+-- DOMAIN: Performance concepts
+-- ------------------------------------------------------------
+-- Q5. Does result caching require the query text to be an EXACT match,
+--     or does Snowflake recognize semantically-equivalent queries
+--     written differently as cache hits too? (See Task 95.)
+--
+-- Q6. What's the concrete difference between scaling a warehouse UP
+--     (bigger size) versus OUT (more clusters), and which one
+--     specifically addresses query QUEUING caused by concurrency? (See
+--     Task 96.)
+
+-- ------------------------------------------------------------
+-- DOMAIN: Data loading and unloading
+-- ------------------------------------------------------------
+-- Q7. Which COPY INTO option would you use to keep loading a file even
+--     after hitting a bad row, and simply skip that one row instead of
+--     aborting the whole file? (See Task 4, Tasks 38-48: ON_ERROR =
+--     'CONTINUE' or 'SKIP_FILE'.)
+--
+-- Q8. Does Snowpipe with AUTO_INGEST guarantee exactly-once delivery,
+--     or could the same file theoretically be processed more than
+--     once under some failure conditions? (See Tasks 65-68.)
+
+-- ------------------------------------------------------------
+-- DOMAIN: Data transformation
+-- ------------------------------------------------------------
+-- Q9. What does FLATTEN actually do to a VARIANT array/object column,
+--     in terms of the number of rows it produces? (See Tasks 49-54.)
+--
+-- Q10. A STANDARD stream and an APPEND_ONLY stream both track changes
+--      to a table. Which one tracks UPDATEs and DELETEs, and which one
+--      only tracks new inserted rows? (See Tasks 69-76.)
+
+-- ------------------------------------------------------------
+-- DOMAIN: Data protection and sharing
+-- ------------------------------------------------------------
+-- Q11. Does a zero-copy clone duplicate a table's underlying storage
+--      the moment you run CREATE TABLE ... CLONE, or does it only
+--      start consuming its OWN storage once the clone or the original
+--      diverges? (See Task 85, Task 126.)
+--
+-- Q12. Can Time Travel recover a table that's already been dropped,
+--      and if so, which command actually does that (not a simple
+--      SELECT AT/BEFORE)? (See Tasks 83-87.)
 
 -- ============================================================
--- Understanding check (answer after running the above)
+-- ANSWER KEY — check yourself honestly, don't peek early:
+-- A1. True — compute and storage are billed and scaled completely
+--     independently; suspending/resizing IOT_LAB_WH never affects
+--     whether CURATED.SENSOR_READINGS_HISTORY is queryable elsewhere.
+-- A2. Cloud services, query processing (compute), and database storage
+--     — a virtual warehouse IS the compute layer.
+-- A3. Only tables created AFTER the grant. Existing tables need their
+--     own explicit grant (or a FUTURE grant issued retroactively does
+--     NOT retroactively cover them).
+-- A4. Row access policies restrict entire ROWS (which rows are visible
+--     at all); masking policies restrict specific COLUMN VALUES within
+--     rows a user can otherwise already see.
+-- A5. Exact text match is required — even a harmless whitespace or
+--     casing difference in the SQL text produces a cache miss.
+-- A6. UP = bigger nodes, speeds up ONE query's raw compute. OUT = more
+--     clusters of the same size, addresses QUEUING/concurrency, not
+--     single-query speed.
+-- A7. ON_ERROR = 'CONTINUE' skips just the bad row and keeps loading;
+--     'SKIP_FILE' abandons the whole file on any error instead.
+-- A8. No hard exactly-once guarantee — Snowpipe is documented as
+--     at-least-once; a downstream MERGE/dedup step is still your
+--     responsibility for true exactly-once semantics.
+-- A9. FLATTEN produces ONE OUTPUT ROW PER ELEMENT in the array/object
+--     — an array of 5 elements becomes 5 rows (joined back to the
+--     original row's other columns via LATERAL).
+-- A10. STANDARD tracks inserts, updates, AND deletes (with
+--      METADATA$ACTION/ISUPDATE). APPEND_ONLY tracks only newly
+--      inserted rows, ignoring updates/deletes entirely.
+-- A11. Only once they DIVERGE. Immediately after cloning, the clone
+--      shares 100% of the original's physical storage — it starts
+--      consuming its own storage only for rows that change on either
+--      side afterward.
+-- A12. Yes — with UNDROP TABLE (or UNDROP SCHEMA/DATABASE), not a
+--      SELECT. This only works within the Time Travel retention
+--      window, and only if no newer object with the same name exists
+--      (Task 84's name-collision gotcha).
 -- ============================================================
--- 1. TODO
--- 2. TODO
--- 3. TODO
+
+-- ============================================================
+-- UNDERSTANDING CHECK — answer before moving to Task 128:
+--
+-- 1. Score yourself honestly against the answer key above. For any
+--    question you got wrong OR weren't fully confident about, go
+--    re-run the referenced task's SQL file right now rather than just
+--    re-reading the answer. Which domain (architecture, security,
+--    performance, loading, transformation, protection) was your
+--    weakest?
+--
+-- 2. Several answers above hinge on a WORD choice that's easy to
+--    blur under exam pressure -- "exact" text match (A5), "only after
+--    the grant" (A3), "at-least-once" not "exactly-once" (A8). Why do
+--    exam-style questions so often hinge on that kind of precise
+--    qualifier, and what's a concrete strategy for catching yourself
+--    when you're about to answer based on the GENERAL idea instead of
+--    the EXACT documented behavior?
+--
+-- 3. Every question here pointed back to a specific earlier task file.
+--    If you were prepping for a real SnowPro Core exam under time
+--    pressure, would re-deriving an answer from first principles (by
+--    re-running the SQL) or memorizing the answer key be the more
+--    durable prep strategy for questions phrased slightly differently
+--    than the ones here?
+-- ============================================================
