@@ -1,13 +1,94 @@
+-- ============================================================
 -- Task 112 — dbt docs and the dependency graph
 -- Category: dbt
+-- Every model built across Tasks 103-111 (sources, staging, marts,
+-- seeds, snapshots) already forms a real DAG -- this task makes that
+-- DAG and its documentation visible without reading anyone's YAML by
+-- hand.
+-- ============================================================
+
+-- 1. descriptions are free documentation once you're already writing
+--    YAML for tests (Task 106). Add description fields to
+--    iot_lab_dbt/models/staging/_stg_models.yml and
+--    iot_lab_dbt/models/marts/_marts_models.yml (create the latter if
+--    it doesn't exist yet):
 --
--- Goal: Generating dbt's documentation site and visual DAG so a model's lineage is self-documenting instead of tribal knowledge.
+-- # _stg_models.yml (add descriptions to the existing tests block)
+-- models:
+--   - name: stg_sensor_readings
+--     description: >
+--       One row per raw sensor reading, cast to proper types and
+--       filtered to drop unparseable rows. Built directly on top of
+--       the RAW.SENSOR_READINGS_RAW source.
+--     columns:
+--       - name: event_id
+--         description: Unique identifier for a single sensor reading event.
+--         tests: [unique, not_null]
 --
--- TODO: write the walkthrough SQL for this task.
+-- # _marts_models.yml
+-- version: 2
+-- models:
+--   - name: fct_daily_sensor_summary
+--     description: >
+--       One row per sensor per calendar day, aggregating raw readings
+--       into count/avg/min/max. Incrementally maintained (Task 109).
+--   - name: dim_device_model
+--     description: >
+--       One row per device_type, joining observed sensors against the
+--       device_model_lookup seed (Task 111) for a human-readable name
+--       and expected battery life.
+
+-- 2. Generate the docs site -- this reads the manifest dbt already
+--    built while compiling/running every task in this category, plus
+--    the descriptions from step 1.
+--
+--    dbt docs generate
+
+-- 3. Serve it locally and actually look at it in a browser.
+--
+--    dbt docs serve
+--    -- Open the local URL it prints. Find stg_sensor_readings in the
+--    -- left nav and click the DAG icon (usually bottom-right) to see
+--    -- the full lineage graph.
+
+-- 4. In the docs UI, click on fct_daily_sensor_summary's node in the
+--    graph view and expand its lineage both directions. Confirm you
+--    can visually trace: RAW.SENSOR_READINGS_RAW source
+--    -> stg_sensor_readings -> fct_daily_sensor_summary, and separately
+--    that device_model_lookup (a seed) feeds into dim_device_model.
+
+-- 5. Docs aren't only in the web UI -- the same descriptions are
+--    queryable as data. Check the compiled manifest.json:
+--
+--    dbt docs generate
+--    -- then open target/manifest.json and find the "description"
+--    -- field for stg_sensor_readings' event_id column -- it's the
+--    -- exact text you wrote in step 1's YAML.
 
 -- ============================================================
--- Understanding check (answer after running the above)
+-- UNDERSTANDING CHECK — answer before moving to Task 113:
+--
+-- 1. Step 3's DAG view rendered itself automatically from every ref(),
+--    source(), and seed reference used across Tasks 104-111 -- you
+--    never drew this graph or listed it out anywhere by hand. Where
+--    does dbt actually get the information to draw it (hint: think
+--    about what dbt has to parse out of every model file just to know
+--    what order to run things in, which you already reasoned about in
+--    Task 105)?
+--
+-- 2. Step 1's YAML descriptions end up both in the browsable docs site
+--    (step 3) AND in manifest.json (step 5) as plain structured data.
+--    What's the advantage of documentation that lives in the SAME
+--    version-controlled YAML file as your tests, versus documentation
+--    that lives in a separate wiki page someone has to remember to
+--    keep in sync?
+--
+-- 3. A new analytics engineer joins the team (the same scenario from
+--    Task 103) and needs to understand where fct_daily_sensor_summary's
+--    numbers actually come from before changing anything. Compare
+--    "read every model's SQL file by hand to reconstruct the
+--    dependency chain" against "open dbt docs serve and click through
+--    the lineage graph." What's actually faster, and what's the risk
+--    of the manual approach on a project with dozens of models instead
+--    of just these few?
 -- ============================================================
--- 1. TODO
--- 2. TODO
--- 3. TODO

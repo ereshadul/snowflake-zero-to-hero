@@ -1,13 +1,76 @@
+-- ============================================================
 -- Task 107 — dbt custom and singular tests
 -- Category: dbt
+-- ============================================================
+
+-- 1. A SINGULAR test: a plain .sql file in the tests/ folder, one
+--    specific business rule, no reuse intended. The rule here: a
+--    sensor's battery_pct should never be negative -- that's a data
+--    quality bug, not a valid reading. Save as
+--    iot_lab_dbt/tests/assert_no_negative_battery_pct.sql:
 --
--- Goal: Writing your own SQL-based test when the four generic tests aren't enough to express a real business rule.
+-- SELECT
+--     event_id,
+--     sensor_id,
+--     battery_pct
+-- FROM {{ ref('stg_sensor_readings') }}
+-- WHERE battery_pct < 0
+
+-- 2. Every dbt test (built-in or custom) follows the SAME contract:
+--    the query should return ZERO rows if the data is healthy. Any row
+--    returned is a FAILURE. Run just this test:
 --
--- TODO: write the walkthrough SQL for this task.
+--    dbt test --select assert_no_negative_battery_pct
+
+-- 3. A GENERIC custom test: reusable across MULTIPLE columns/models,
+--    unlike a singular test. This one checks that a numeric column
+--    never exceeds a given max value. Save as
+--    iot_lab_dbt/macros/test_below_max.sql:
+--
+-- {% test below_max(model, column_name, max_value) %}
+--
+-- SELECT *
+-- FROM {{ model }}
+-- WHERE {{ column_name }} > {{ max_value }}
+--
+-- {% endtest %}
+
+-- 4. Apply the new generic test in YAML, exactly like the built-in
+--    ones from Task 106. Add to
+--    iot_lab_dbt/models/staging/_stg_models.yml under
+--    stg_sensor_readings' columns:
+--
+--       - name: battery_pct
+--         tests:
+--           - below_max:
+--               max_value: 100
+
+-- 5. Run everything.
+--
+--    dbt test
 
 -- ============================================================
--- Understanding check (answer after running the above)
+-- UNDERSTANDING CHECK — answer before moving to Task 108:
+--
+-- 1. Both step 1's singular test and Task 106's built-in accepted_values
+--    test compile down to the same underlying contract. What is that
+--    contract -- what does dbt actually check about the query's
+--    RESULT SET to decide pass vs. fail?
+--
+-- 2. Step 3's below_max is a GENERIC test (takes model/column_name/
+--    max_value as parameters, reusable anywhere), while step 1's
+--    assert_no_negative_battery_pct is a SINGULAR test (one hardcoded
+--    query, one specific check). If you later needed the exact same
+--    "never negative" rule on a DIFFERENT column, like
+--    signal_strength_dbm, could you reuse the singular test file as-is,
+--    or would you need to write a new one? What about the generic
+--    below_max test -- could a below_max-style generic test for
+--    "never negative" be applied to any column just by referencing it
+--    in YAML?
+--
+-- 3. Task 106 covered the four BUILT-IN tests (unique, not_null,
+--    accepted_values, relationships). What real business rule from
+--    this lab's sensor domain (battery_pct >= 0 is one example) could
+--    NOT be expressed using only those four generic tests, and
+--    specifically needed a custom SQL condition to check?
 -- ============================================================
--- 1. TODO
--- 2. TODO
--- 3. TODO

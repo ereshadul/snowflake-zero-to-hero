@@ -5,14 +5,21 @@
 ## Goal
 Declaring raw tables as dbt sources() instead of hardcoding table names, and the staging-layer convention of one staging model per source table doing only light renaming/casting.
 
+**Real-world scenario:** The raw landing table gets renamed during a
+platform migration, and a project with dozens of models hardcoding
+`IOT_LAB.RAW.SENSOR_READINGS_RAW` everywhere means dozens of files to
+fix. A project built on `{{ source(...) }}` means updating one YAML
+file.
+
 ## Steps
-1. Run `105_dbt_sources_staging.sql`.
-2. Work through it section by section against your own Snowflake trial
-   — don't just read it.
+1. Work through `105_dbt_sources_staging.sql` — declare the source,
+   build the staging model, run it.
+2. Do it for real against your own Snowflake trial — don't just read
+   it.
 3. Answer the understanding check below before moving to the next task.
 
 ## Understanding check
-See the bottom of `105_dbt_sources_staging.sql`. Answer by actually running the
-diagnostic queries it points to, not from memory.
-
-*(Status: scaffolded — SQL content not yet written.)*
+See the bottom of `105_dbt_sources_staging.sql` — three questions on
+why staging models cast/filter before anything else touches the data,
+the one-place-to-update benefit of sources, and why staging models
+stay deliberately "dumb."

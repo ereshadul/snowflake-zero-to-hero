@@ -1,13 +1,86 @@
+-- ============================================================
 -- Task 106 — dbt schema tests (unique, not_null, relationships, accepted_values)
 -- Category: dbt
+-- ============================================================
+
+-- 1. dbt ships four built-in generic tests, declared in YAML next to
+--    the model they apply to -- no SQL to write yourself. Save as
+--    iot_lab_dbt/models/staging/_stg_models.yml:
 --
--- Goal: The four built-in generic tests declared in YAML, and what each one actually catches.
+-- version: 2
 --
--- TODO: write the walkthrough SQL for this task.
+-- models:
+--   - name: stg_sensor_readings
+--     columns:
+--       - name: event_id
+--         tests:
+--           - unique
+--           - not_null
+--       - name: sensor_id
+--         tests:
+--           - not_null
+--       - name: status_code
+--         tests:
+--           - accepted_values:
+--               values: ['OK', 'WARN', 'ERROR', 'OFFLINE']
+--
+--   - name: fct_daily_sensor_summary
+--     columns:
+--       - name: sensor_id
+--         tests:
+--           - not_null
+--           - relationships:
+--               to: ref('stg_sensor_readings')
+--               field: sensor_id
+
+-- 2. Run every test in the project.
+--
+--    dbt test
+
+-- 3. Deliberately trip a test so you see a FAILURE, not just passes --
+--    this is the useful half of learning testing. Temporarily edit
+--    stg_sensor_readings.sql's SELECT to include a row with an
+--    out-of-list status_code (e.g. UNION ALL SELECT ... 'BOGUS_STATUS'
+--    ...), then:
+--
+--    dbt run --select stg_sensor_readings
+--    dbt test --select stg_sensor_readings
+--    -- Expect the accepted_values test on status_code to FAIL.
+--    -- Revert the edit afterward and re-run both commands clean.
+
+-- 4. Each test compiles down to a SELECT that should return ZERO rows
+--    if the data is clean -- dbt just runs that query and checks the
+--    row count. See it yourself:
+--
+--    dbt show --inline "
+--      select status_code from {{ ref('stg_sensor_readings') }}
+--      where status_code not in ('OK','WARN','ERROR','OFFLINE')
+--    "
+--    -- This is roughly what the accepted_values test runs under the
+--    -- hood -- any row returned here is a row that test would flag.
 
 -- ============================================================
--- Understanding check (answer after running the above)
+-- UNDERSTANDING CHECK — answer before moving to Task 107:
+--
+-- 1. Step 3 deliberately broke accepted_values on status_code. What
+--    did dbt's terminal output actually show for the FAILING test --
+--    does it tell you the exact row count that violated the rule, or
+--    just "fail"? Would you know WHICH rows violated it without
+--    running step 4's manual query yourself?
+--
+-- 2. The `relationships` test on fct_daily_sensor_summary.sensor_id
+--    checks that every sensor_id there also exists in
+--    stg_sensor_readings.sensor_id -- essentially a referential
+--    integrity check dbt performs for you. Snowflake itself doesn't
+--    enforce foreign keys by default (see Task 100's PRIMARY KEY note
+--    for standard tables). Where does dbt's relationships test
+--    actually run -- inside Snowflake as a constraint, or as its own
+--    separate SELECT query dbt issues and checks?
+--
+-- 3. All four generic tests here (unique, not_null, accepted_values,
+--    relationships) are declared in YAML with ZERO custom SQL written
+--    by you. What's the tradeoff of using them versus writing your own
+--    test query by hand -- what do you gain in speed of writing tests,
+--    and what could you NOT express with just these four (a preview of
+--    what Task 107's custom tests are for)?
 -- ============================================================
--- 1. TODO
--- 2. TODO
--- 3. TODO
