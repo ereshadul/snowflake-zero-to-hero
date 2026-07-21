@@ -9,14 +9,20 @@ already built (Task 1's raw landing table is a Bronze layer; the
 cleansed `CURATED` tables are Silver; an aggregated reporting table
 would be Gold).
 
+**Real-world scenario:** A new hire asks "why do we have three copies
+of basically the same sensor data?" The answer is that each layer
+serves a different consumer — Bronze is a faithful raw archive for
+replay, Silver is a clean general-purpose table for analysts, Gold is
+a purpose-built aggregation for one dashboard.
+
 ## Steps
-1. Run `105_medallion_architecture.sql`.
+1. Run `115_medallion_architecture.sql`.
 2. Work through it section by section against your own Snowflake trial
    — don't just read it.
 3. Answer the understanding check below before moving to the next task.
 
 ## Understanding check
-See the bottom of `105_medallion_architecture.sql`. Answer by actually
-running the diagnostic queries it points to, not from memory.
-
-*(Status: scaffolded — SQL content not yet written.)*
+See the bottom of `115_medallion_architecture.sql` — three questions on
+why Bronze keeps garbage rows Silver drops, how many Gold tables a
+mature architecture actually has, and Gold tables vs. materialized
+views.
