@@ -22,7 +22,7 @@ SELECT COUNT(*) AS system_1pct
 FROM CURATED.SENSOR_READINGS_SYNTHETIC SAMPLE SYSTEM (1);
 
 -- Look at both queries in Monitoring -> Query History (or the Query
--- Profile, same as Task 66) and compare their actual elapsed time and
+-- Profile, same as Task 94) and compare their actual elapsed time and
 -- bytes scanned -- not just the row counts above.
 
 -- 3. A fixed row count instead of a percentage.
@@ -45,7 +45,7 @@ LIMIT 5;
 --    one is faster on your table, and by roughly how much? Relate
 --    this to what BERNOULLI has to evaluate (every individual row)
 --    vs. what SYSTEM has to evaluate (whole micro-partitions) --
---    the same partition-pruning idea from Task 65's clustering task.
+--    the same partition-pruning idea from Task 93's clustering task.
 --
 -- 2. Run step 4 twice. Do you get the exact same 5 rows both times?
 --    Now try it WITHOUT the REPEATABLE clause, twice. Same rows or
