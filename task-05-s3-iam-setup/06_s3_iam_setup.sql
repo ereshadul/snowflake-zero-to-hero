@@ -1,0 +1,13 @@
+-- Task 5 — AWS S3 + IAM setup for Snowflake
+-- Category: AWS Integration
+--
+-- Goal: Creating an S3 bucket and the IAM policy/role Snowflake needs to read from it -- the prerequisite plumbing before any STORAGE INTEGRATION can exist.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

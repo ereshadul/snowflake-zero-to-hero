@@ -1,0 +1,13 @@
+-- Task 52 — FLATTEN a single JSON record
+-- Category: Semi-structured data
+--
+-- Goal: Exploding a single nested JSON document into relational rows.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

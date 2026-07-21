@@ -1,0 +1,13 @@
+-- Task 83 — AT / BEFORE queries
+-- Category: Time Travel & cloning
+--
+-- Goal: Querying a table as it existed at a past timestamp, offset, or query ID.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

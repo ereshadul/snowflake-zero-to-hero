@@ -1,0 +1,14 @@
+-- Task 110 — Semantic layer & "Talk to Data"
+-- Category: Ecosystem & Modeling
+--
+-- Goal: Building a semantic model so Cortex Analyst can answer
+-- natural-language questions over your data directly.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

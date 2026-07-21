@@ -1,0 +1,13 @@
+-- Task 18 — MERGE statement deep dive
+-- Category: Advanced Snowflake SQL
+--
+-- Goal: Upsert logic in one statement -- WHEN MATCHED/NOT MATCHED, and the gotchas around matching more than one row.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

@@ -1,0 +1,13 @@
+-- Task 21 — LATERAL joins with table functions
+-- Category: Advanced Snowflake SQL
+--
+-- Goal: Calling a table function once per row of an outer query -- the general mechanism behind FLATTEN.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

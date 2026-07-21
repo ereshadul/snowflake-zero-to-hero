@@ -1,0 +1,13 @@
+-- Task 14 — CASE expressions and conditional aggregation
+-- Category: Advanced SQL
+--
+-- Goal: Turning row-level conditions into pivoted aggregate columns with CASE inside SUM/COUNT.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

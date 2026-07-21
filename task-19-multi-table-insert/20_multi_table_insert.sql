@@ -1,0 +1,13 @@
+-- Task 19 — Multi-table INSERT
+-- Category: Advanced Snowflake SQL
+--
+-- Goal: Routing rows from one SELECT into multiple target tables in a single statement.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

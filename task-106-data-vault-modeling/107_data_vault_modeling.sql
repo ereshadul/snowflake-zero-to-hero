@@ -1,0 +1,13 @@
+-- Task 106 — Data Vault modeling
+-- Category: Ecosystem
+--
+-- Goal: Hubs, links, and satellites applied to a small Snowflake schema.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

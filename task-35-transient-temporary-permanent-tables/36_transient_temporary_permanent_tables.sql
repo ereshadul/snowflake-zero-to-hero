@@ -1,0 +1,13 @@
+-- Task 35 — PERMANENT vs. TRANSIENT vs. TEMPORARY tables
+-- Category: Table Types
+--
+-- Goal: Time Travel/Fail-safe differences between the three table types, why daily-truncated staging tables usually don't need PERMANENT, and whether a permanent table can live inside a transient schema.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

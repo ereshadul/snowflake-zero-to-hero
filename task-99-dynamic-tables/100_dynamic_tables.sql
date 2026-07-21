@@ -1,0 +1,13 @@
+-- Task 99 — Dynamic Tables
+-- Category: Newer table types
+--
+-- Goal: Declarative, incrementally-refreshed tables defined by a query instead of a pipeline.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

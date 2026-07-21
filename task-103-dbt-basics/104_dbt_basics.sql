@@ -1,0 +1,13 @@
+-- Task 103 — dbt basics on Snowflake
+-- Category: Ecosystem
+--
+-- Goal: Wiring up a dbt project against Snowflake and running a first model + test.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

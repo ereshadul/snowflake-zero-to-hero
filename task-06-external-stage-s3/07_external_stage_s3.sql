@@ -1,0 +1,13 @@
+-- Task 6 — External stage on S3 and COPY INTO from S3
+-- Category: AWS Integration
+--
+-- Goal: Creating a STORAGE INTEGRATION and an external stage pointed at S3, then loading data with the same COPY INTO you already know from Task 1 -- the one deliberate exception to this repo's no-external-cloud rule, kept to exactly these two tasks.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

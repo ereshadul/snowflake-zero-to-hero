@@ -1,0 +1,13 @@
+-- Task 24 — Running totals and cumulative sums
+-- Category: SQL Interview Practice
+--
+-- Goal: The most commonly asked window-function interview problem, plus the reset-per-group variant.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

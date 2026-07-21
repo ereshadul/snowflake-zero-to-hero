@@ -1,0 +1,13 @@
+-- Task 31 — Manual pivot with CASE (crosstab without PIVOT)
+-- Category: SQL Interview Practice
+--
+-- Goal: Building a pivot table by hand for interviews that don't allow the PIVOT keyword.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

@@ -1,0 +1,13 @@
+-- Task 8 — Window functions: LAG and LEAD
+-- Category: Advanced SQL
+--
+-- Goal: Comparing a row to the row before/after it within a partition -- period-over-period deltas without a self-join.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

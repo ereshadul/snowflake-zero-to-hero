@@ -1,0 +1,13 @@
+-- Task 97 — Resource monitors
+-- Category: Performance & cost
+--
+-- Goal: Capping credit spend with a resource monitor and suspend actions.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

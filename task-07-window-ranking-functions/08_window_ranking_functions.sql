@@ -1,0 +1,13 @@
+-- Task 7 — Window functions: ROW_NUMBER, RANK, DENSE_RANK, NTILE
+-- Category: Advanced SQL
+--
+-- Goal: Assigning per-row rank within a partition, and the real differences between the three ranking functions when ties happen.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

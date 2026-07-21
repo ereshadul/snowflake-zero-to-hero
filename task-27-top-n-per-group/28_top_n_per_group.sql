@@ -1,0 +1,13 @@
+-- Task 27 — Top-N per group
+-- Category: SQL Interview Practice
+--
+-- Goal: The "top 3 per category" problem -- QUALIFY vs. window function vs. correlated subquery.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

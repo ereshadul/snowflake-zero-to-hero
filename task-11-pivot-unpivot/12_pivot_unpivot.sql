@@ -1,0 +1,13 @@
+-- Task 11 — PIVOT and UNPIVOT
+-- Category: Advanced SQL
+--
+-- Goal: Turning row values into columns and back, natively, without hand-rolled CASE statements.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

@@ -1,0 +1,13 @@
+-- Task 15 — Advanced string and regex functions
+-- Category: Advanced SQL
+--
+-- Goal: REGEXP_SUBSTR, SPLIT, and pattern-based extraction instead of chained SUBSTRING/POSITION calls.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

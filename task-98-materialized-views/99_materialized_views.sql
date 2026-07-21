@@ -1,0 +1,13 @@
+-- Task 98 — Materialized views
+-- Category: Performance & cost
+--
+-- Goal: Trading storage/maintenance cost for query speed on an expensive aggregation.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

@@ -1,0 +1,13 @@
+-- Task 20 — Sampling (SAMPLE / TABLESAMPLE)
+-- Category: Advanced Snowflake SQL
+--
+-- Goal: Querying a random subset of a huge table cheaply, and the difference between ROW and BERNOULLI/SYSTEM sampling.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

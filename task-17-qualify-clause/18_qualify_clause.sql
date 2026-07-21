@@ -1,0 +1,13 @@
+-- Task 17 — QUALIFY clause
+-- Category: Advanced Snowflake SQL
+--
+-- Goal: Filtering on a window function's result without wrapping the query in a subquery -- a Snowflake-native shortcut most other dialects don't have.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

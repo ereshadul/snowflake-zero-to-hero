@@ -1,0 +1,13 @@
+-- Task 95 — Result caching
+-- Category: Performance & cost
+--
+-- Goal: When Snowflake reuses a cached result vs. recomputing, and how to tell.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

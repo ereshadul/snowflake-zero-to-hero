@@ -1,0 +1,13 @@
+-- Task 91 — Dynamic data masking
+-- Category: Security
+--
+-- Goal: Masking column values for some roles but not others without duplicating data.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

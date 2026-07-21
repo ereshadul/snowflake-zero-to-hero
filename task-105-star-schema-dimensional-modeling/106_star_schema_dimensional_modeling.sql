@@ -1,0 +1,15 @@
+-- Task 105 — Star schema & dimensional modeling
+-- Category: Ecosystem & Modeling
+--
+-- Goal: Fact tables, dimension tables, and a date dimension --
+-- Kimball-style star schema modeling, as a second modeling approach
+-- alongside Task 106's Data Vault.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

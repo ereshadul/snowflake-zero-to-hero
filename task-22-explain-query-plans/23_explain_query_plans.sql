@@ -1,0 +1,13 @@
+-- Task 22 — Reading EXPLAIN and query plans
+-- Category: Advanced Snowflake SQL
+--
+-- Goal: Reading a query plan before it runs to predict where it'll actually spend time, as a complement to the post-run Query Profile task.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO
