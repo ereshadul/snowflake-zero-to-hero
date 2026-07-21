@@ -1,0 +1,13 @@
+-- Task 10 — CTEs and recursive CTEs
+-- Category: Advanced SQL
+--
+-- Goal: WITH clauses for readable multi-step queries, then a recursive CTE for hierarchical/graph-shaped data.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

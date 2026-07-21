@@ -1,0 +1,13 @@
+-- Task 108 — dbt macros and Jinja templating
+-- Category: dbt
+--
+-- Goal: Writing a reusable macro with Jinja to stop copy-pasting the same SQL pattern across models.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

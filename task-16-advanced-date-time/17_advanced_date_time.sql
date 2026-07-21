@@ -1,0 +1,13 @@
+-- Task 16 — Advanced date/time manipulation
+-- Category: Advanced SQL
+--
+-- Goal: Date truncation, date diffing, and business-day-aware date math.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

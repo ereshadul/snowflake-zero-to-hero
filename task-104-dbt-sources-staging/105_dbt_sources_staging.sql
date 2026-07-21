@@ -1,0 +1,13 @@
+-- Task 104 — dbt sources and staging models
+-- Category: dbt
+--
+-- Goal: Declaring raw tables as dbt sources() instead of hardcoding table names, and the staging-layer convention of one staging model per source table doing only light renaming/casting.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

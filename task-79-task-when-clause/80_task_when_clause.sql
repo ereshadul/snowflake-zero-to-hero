@@ -1,0 +1,13 @@
+-- Task 79 — WHEN clause
+-- Category: Tasks, deeper
+--
+-- Goal: Conditionally skipping a task run based on a predicate, e.g. SYSTEM$STREAM_HAS_DATA.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

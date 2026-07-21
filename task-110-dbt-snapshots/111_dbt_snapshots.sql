@@ -1,0 +1,13 @@
+-- Task 110 — dbt snapshots (SCD Type 2)
+-- Category: dbt
+--
+-- Goal: Capturing how a mutable source table's rows change over time using dbt's built-in Type 2 slowly-changing-dimension pattern.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

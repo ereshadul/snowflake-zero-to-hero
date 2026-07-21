@@ -1,0 +1,13 @@
+-- Task 77 — No-schedule/triggered tasks
+-- Category: Tasks, deeper
+--
+-- Goal: Tasks that fire on a stream having data instead of a fixed schedule.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

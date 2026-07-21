@@ -1,0 +1,15 @@
+-- Task 122 — Query tagging & cost attribution
+-- Category: FinOps
+--
+-- Goal: Using QUERY_TAG and object tags to attribute warehouse spend
+-- back to a team, project, or workload — the chargeback/showback
+-- pattern.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

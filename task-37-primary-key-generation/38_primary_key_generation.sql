@@ -1,0 +1,13 @@
+-- Task 37 — Generating primary keys
+-- Category: Data Integrity & Quality
+--
+-- Goal: Generating primary key values in Snowflake with sequences and AUTOINCREMENT/IDENTITY columns, given PRIMARY KEY itself isn't enforced.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

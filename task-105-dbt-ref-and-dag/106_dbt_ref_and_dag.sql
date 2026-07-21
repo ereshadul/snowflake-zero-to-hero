@@ -1,0 +1,13 @@
+-- Task 105 — dbt ref() and building a model DAG
+-- Category: dbt
+--
+-- Goal: Using ref() instead of hardcoded table names so dbt can infer dependency order automatically, and reading the resulting DAG.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

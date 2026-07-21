@@ -1,0 +1,13 @@
+-- Task 28 — Percentage of total / ratio-to-report
+-- Category: SQL Interview Practice
+--
+-- Goal: Expressing each row as a share of its group's total using window functions instead of a self-join.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

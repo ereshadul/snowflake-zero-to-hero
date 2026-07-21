@@ -1,0 +1,13 @@
+-- Task 25 — Gaps and islands problem
+-- Category: SQL Interview Practice
+--
+-- Goal: Finding consecutive-value groups and the gaps between them -- a named classic in SQL interviews.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

@@ -1,0 +1,13 @@
+-- Task 23 — Nth highest value (the second-highest-salary problem)
+-- Category: SQL Interview Practice
+--
+-- Goal: The classic interview question, solved three ways (DISTINCT+OFFSET, DENSE_RANK, correlated subquery) with the tradeoffs of each.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

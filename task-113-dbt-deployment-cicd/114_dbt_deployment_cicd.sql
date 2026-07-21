@@ -1,0 +1,13 @@
+-- Task 113 — dbt deployment and CI/CD for dbt
+-- Category: dbt
+--
+-- Goal: Running dbt on a schedule/in a pipeline (dbt Cloud vs. a self-hosted dbt run in GitHub Actions) instead of only ever running it from your laptop.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

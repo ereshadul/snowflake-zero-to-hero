@@ -1,0 +1,13 @@
+-- Task 56 — Unload options (SINGLE/MAX_FILE_SIZE/HEADER/OVERWRITE)
+-- Category: Unloading data
+--
+-- Goal: Controlling file splitting, headers, and overwrite behavior on unload.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

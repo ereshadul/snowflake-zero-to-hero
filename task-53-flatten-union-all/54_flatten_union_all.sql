@@ -1,0 +1,13 @@
+-- Task 53 — FLATTEN + UNION ALL multiple records
+-- Category: Semi-structured data
+--
+-- Goal: Flattening many JSON documents at once and stitching the results together.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

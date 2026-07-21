@@ -1,0 +1,13 @@
+-- Task 13 — Correlated subqueries vs. EXISTS vs. IN vs. JOIN
+-- Category: Advanced SQL
+--
+-- Goal: Four ways to ask "does a related row exist," and why they don't always perform or behave the same.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

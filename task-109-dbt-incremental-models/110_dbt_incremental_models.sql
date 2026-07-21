@@ -1,0 +1,13 @@
+-- Task 109 — dbt incremental models
+-- Category: dbt
+--
+-- Goal: Materializing a model so it only processes new/changed rows on subsequent runs instead of rebuilding the whole table every time.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

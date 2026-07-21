@@ -1,0 +1,13 @@
+-- Task 26 — Deduplication strategies
+-- Category: SQL Interview Practice
+--
+-- Goal: Several ways to find and remove duplicate rows, and why ROW_NUMBER is usually the right one.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

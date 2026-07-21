@@ -1,0 +1,13 @@
+-- Task 32 — Consecutive/streak detection
+-- Category: SQL Interview Practice
+--
+-- Goal: Finding the longest run of consecutive days/values per group -- a direct application of the gaps-and-islands technique.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

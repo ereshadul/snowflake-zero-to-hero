@@ -1,0 +1,13 @@
+-- Task 78 — Task trees/DAGs
+-- Category: Tasks, deeper
+--
+-- Goal: Chaining tasks into a dependency graph with AFTER.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

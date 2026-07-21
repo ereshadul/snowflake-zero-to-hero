@@ -1,0 +1,13 @@
+-- Task 30 — Self-join for hierarchical data (manager-employee)
+-- Category: SQL Interview Practice
+--
+-- Goal: Walking an org chart with a self-join, then with a recursive CTE, and when each is the right tool.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

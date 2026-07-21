@@ -1,0 +1,13 @@
+-- Task 65 — Pipe on internal stage
+-- Category: Snowpipe
+--
+-- Goal: Standing up a Snowpipe that ingests from an internal stage.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

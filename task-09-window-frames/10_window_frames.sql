@@ -1,0 +1,13 @@
+-- Task 9 — Window frame clauses (ROWS/RANGE BETWEEN)
+-- Category: Advanced SQL
+--
+-- Goal: Cumulative sums and moving averages by controlling exactly which rows a window function sees.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

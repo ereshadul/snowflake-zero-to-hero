@@ -1,0 +1,13 @@
+-- Task 69 — STANDARD stream
+-- Category: Streams
+--
+-- Goal: Tracking inserts/updates/deletes on a table with a STANDARD stream.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

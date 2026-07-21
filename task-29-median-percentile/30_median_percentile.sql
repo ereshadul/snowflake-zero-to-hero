@@ -1,0 +1,13 @@
+-- Task 29 — Median and percentile calculation
+-- Category: SQL Interview Practice
+--
+-- Goal: MEDIAN, PERCENTILE_CONT, and PERCENTILE_DISC -- and why they can disagree.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

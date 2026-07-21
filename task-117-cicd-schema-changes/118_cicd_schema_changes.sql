@@ -1,0 +1,13 @@
+-- Task 117 — CI/CD for schema changes
+-- Category: Ecosystem
+--
+-- Goal: Driving SQL deployments through GitHub Actions instead of hand-running worksheets.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

@@ -1,0 +1,13 @@
+-- Task 12 — Advanced joins: self-join and non-equi join
+-- Category: Advanced SQL
+--
+-- Goal: Joining a table to itself, and joins whose condition isn't equality -- range joins, greatest-n-per-group patterns.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

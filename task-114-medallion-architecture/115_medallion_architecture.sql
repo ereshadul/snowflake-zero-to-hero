@@ -1,0 +1,14 @@
+-- Task 114 — Medallion Architecture
+-- Category: Ecosystem & Modeling
+--
+-- Goal: Designing a Bronze/Silver/Gold layered pipeline -- what
+-- belongs in each layer, and why the boundaries exist.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

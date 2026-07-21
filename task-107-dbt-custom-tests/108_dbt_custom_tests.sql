@@ -1,0 +1,13 @@
+-- Task 107 — dbt custom and singular tests
+-- Category: dbt
+--
+-- Goal: Writing your own SQL-based test when the four generic tests aren't enough to express a real business rule.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

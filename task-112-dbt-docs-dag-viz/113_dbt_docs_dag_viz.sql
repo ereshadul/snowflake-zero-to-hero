@@ -1,0 +1,13 @@
+-- Task 112 — dbt docs and the dependency graph
+-- Category: dbt
+--
+-- Goal: Generating dbt's documentation site and visual DAG so a model's lineage is self-documenting instead of tribal knowledge.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

@@ -1,0 +1,14 @@
+-- Task 118 — Git integration with Snowflake Workspaces
+-- Category: Ecosystem & Modeling
+--
+-- Goal: Connecting a Snowflake Workspace to a Git repository for
+-- native version-controlled SQL development.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

@@ -1,0 +1,15 @@
+-- Task 82 — Incremental load strategy
+-- Category: Tasks, deeper
+--
+-- Goal: Deciding between full-reload and incremental load, and the
+-- watermarking approaches (timestamp-based, CDC-based via Streams)
+-- that make incremental loading actually correct.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO

@@ -1,0 +1,13 @@
+-- Task 111 — dbt seeds
+-- Category: dbt
+--
+-- Goal: Version-controlling small static reference/lookup data as CSV files that dbt loads directly into tables.
+--
+-- TODO: write the walkthrough SQL for this task.
+
+-- ============================================================
+-- Understanding check (answer after running the above)
+-- ============================================================
+-- 1. TODO
+-- 2. TODO
+-- 3. TODO
