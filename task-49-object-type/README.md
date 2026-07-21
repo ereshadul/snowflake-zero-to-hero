@@ -2,8 +2,20 @@
 
 **Category:** Semi-structured data
 
+## About this category — Semi-structured data
+Tasks 49-54 cover Snowflake's native support for JSON-shaped data —
+OBJECT, ARRAY, VARIANT, and the FLATTEN operations that turn nested
+structures back into rows. This is what lets you skip designing a
+rigid schema upfront when the source data genuinely varies row to row.
+
 ## Goal
 Storing and querying key-value data natively with OBJECT.
+
+**Real-world scenario:** Different device models report wildly
+different config fields — some have a sample_rate, some have a
+firmware channel, some have neither — and forcing all of that into
+fixed columns would mean a table full of mostly-NULL fields. An
+OBJECT column holds whatever shape each device actually has.
 
 ## Steps
 1. Run `50_object_type.sql`.
@@ -12,7 +24,6 @@ Storing and querying key-value data natively with OBJECT.
 3. Answer the understanding check below before moving to the next task.
 
 ## Understanding check
-See the bottom of `50_object_type.sql`. Answer by actually running the
-diagnostic queries it points to, not from memory.
-
-*(Status: scaffolded — SQL content not yet written.)*
+See the bottom of `50_object_type.sql` — three questions on the raw
+type of a `:field` access before casting, OBJECT_INSERT's overwrite
+behavior, and the real tradeoff of OBJECT vs. fixed columns.
