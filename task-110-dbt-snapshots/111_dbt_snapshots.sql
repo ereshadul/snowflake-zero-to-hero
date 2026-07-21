@@ -1,7 +1,7 @@
--- Task 103 — dbt basics on Snowflake
+-- Task 110 — dbt snapshots (SCD Type 2)
 -- Category: dbt
 --
--- Goal: Wiring up a dbt project against Snowflake and running a first model + test.
+-- Goal: Capturing how a mutable source table's rows change over time using dbt's built-in Type 2 slowly-changing-dimension pattern.
 --
 -- TODO: write the walkthrough SQL for this task.
 

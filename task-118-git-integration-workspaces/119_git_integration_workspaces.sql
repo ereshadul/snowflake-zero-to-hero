@@ -1,7 +1,8 @@
--- Task 103 — dbt basics on Snowflake
--- Category: dbt
+-- Task 118 — Git integration with Snowflake Workspaces
+-- Category: Ecosystem & Modeling
 --
--- Goal: Wiring up a dbt project against Snowflake and running a first model + test.
+-- Goal: Connecting a Snowflake Workspace to a Git repository for
+-- native version-controlled SQL development.
 --
 -- TODO: write the walkthrough SQL for this task.
 

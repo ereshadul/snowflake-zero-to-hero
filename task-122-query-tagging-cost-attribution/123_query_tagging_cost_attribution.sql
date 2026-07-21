@@ -1,7 +1,9 @@
--- Task 103 — dbt basics on Snowflake
--- Category: dbt
+-- Task 122 — Query tagging & cost attribution
+-- Category: FinOps
 --
--- Goal: Wiring up a dbt project against Snowflake and running a first model + test.
+-- Goal: Using QUERY_TAG and object tags to attribute warehouse spend
+-- back to a team, project, or workload — the chargeback/showback
+-- pattern.
 --
 -- TODO: write the walkthrough SQL for this task.
 

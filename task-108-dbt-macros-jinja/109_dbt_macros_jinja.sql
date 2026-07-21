@@ -1,7 +1,7 @@
--- Task 103 — dbt basics on Snowflake
+-- Task 108 — dbt macros and Jinja templating
 -- Category: dbt
 --
--- Goal: Wiring up a dbt project against Snowflake and running a first model + test.
+-- Goal: Writing a reusable macro with Jinja to stop copy-pasting the same SQL pattern across models.
 --
 -- TODO: write the walkthrough SQL for this task.
 

@@ -1,7 +1,8 @@
--- Task 103 — dbt basics on Snowflake
--- Category: dbt
+-- Task 120 — Semantic layer & "Talk to Data"
+-- Category: Ecosystem & Modeling
 --
--- Goal: Wiring up a dbt project against Snowflake and running a first model + test.
+-- Goal: Building a semantic model so Cortex Analyst can answer
+-- natural-language questions over your data directly.
 --
 -- TODO: write the walkthrough SQL for this task.
 

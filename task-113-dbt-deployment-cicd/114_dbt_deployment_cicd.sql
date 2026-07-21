@@ -1,7 +1,7 @@
--- Task 103 — dbt basics on Snowflake
+-- Task 113 — dbt deployment and CI/CD for dbt
 -- Category: dbt
 --
--- Goal: Wiring up a dbt project against Snowflake and running a first model + test.
+-- Goal: Running dbt on a schedule/in a pipeline (dbt Cloud vs. a self-hosted dbt run in GitHub Actions) instead of only ever running it from your laptop.
 --
 -- TODO: write the walkthrough SQL for this task.
 

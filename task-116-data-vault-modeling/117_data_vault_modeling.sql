@@ -1,7 +1,7 @@
--- Task 103 — dbt basics on Snowflake
--- Category: dbt
+-- Task 116 — Data Vault modeling
+-- Category: Ecosystem
 --
--- Goal: Wiring up a dbt project against Snowflake and running a first model + test.
+-- Goal: Hubs, links, and satellites applied to a small Snowflake schema.
 --
 -- TODO: write the walkthrough SQL for this task.
 

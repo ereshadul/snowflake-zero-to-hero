@@ -1,7 +1,7 @@
--- Task 103 — dbt basics on Snowflake
+-- Task 107 — dbt custom and singular tests
 -- Category: dbt
 --
--- Goal: Wiring up a dbt project against Snowflake and running a first model + test.
+-- Goal: Writing your own SQL-based test when the four generic tests aren't enough to express a real business rule.
 --
 -- TODO: write the walkthrough SQL for this task.
 

@@ -8,40 +8,48 @@ README before moving on — they're not optional, they're where the
 actual learning happens.
 
 ## Prerequisites
-- A Snowflake trial account (free, sign up at snowflake.com).
+- A Snowflake trial account (free, sign up at snowflake.com) and,
+  optionally, a free-tier AWS account — **Task 0 walks through
+  creating both** before you touch anything else.
 - Basic SQL (joins, aggregates, subqueries). No prior Snowflake
   experience assumed.
 - A browser. Almost every task here uses Snowflake's internal stage
-  and native compute only — **no AWS/Azure/GCP account needed for
-  117 of the 119 tasks.** The one deliberate exception is Tasks 5-6
-  (AWS Integration), which need a free-tier AWS account to create an
-  S3 bucket. Skip those two if you don't want AWS involved at all —
-  nothing later in the roadmap depends on them.
+  and native compute only — **no AWS account needed for 128 of the
+  130 tasks.** The one deliberate exception is Tasks 5-6 (AWS
+  Integration), which need AWS to create an S3 bucket. Skip those two
+  if you don't want AWS involved at all — nothing later in the
+  roadmap depends on them.
 - Python 3 locally only if you want to regenerate the CSV in Task 1
   yourself instead of using the sample.
 
 ## Tasks
-119 tasks total, one atomic concept each, grouped into 22 categories,
-ordered so foundational concepts (stages, table types, constraints,
-advanced SQL, interview drills) come before the things that build on
-them. Tasks 1-4 are fully written; the rest are scaffolded (README +
-SQL stub with a goal and TODOs) and get filled in as we work through
-them — see the open [issues](../../issues) for tracking, kept in sync
-with the task numbers below.
+130 tasks total (0-129), one atomic concept each, grouped into 23
+categories, ordered so foundational concepts (environment setup,
+stages, table types, constraints, advanced SQL, interview drills)
+come before the things that build on them. Tasks 0-4 are fully
+written; the rest are scaffolded (README + SQL stub with a goal and
+TODOs) and get filled in as we work through them — see the open
+[issues](../../issues) for tracking, kept in sync with the task
+numbers below.
 
 Tasks 33-37 and 60-64 (Stages/Table Fundamentals/Programmability/Data
 Quality) were added after cross-checking the roadmap against a set of
-real Snowflake interview questions. Tasks 82, 104, 105, 108, and 110
+real Snowflake interview questions. Tasks 92, 114, 115, 118, and 120
 were added after reviewing a course on data modeling/architecture
 patterns. Tasks 5-32 (AWS Integration, Advanced SQL, Advanced
 Snowflake SQL, SQL Interview Practice) were added to round this out
 into a complete zero-to-advanced resource, positioned right after the
-Foundations block. Deliberately excluded throughout: third-party
+Foundations block. Tasks 104-113 expand dbt from a single intro task
+into its own full category — sources, ref()/DAGs, tests (generic and
+custom), macros, incremental models, snapshots, seeds, docs, and
+deployment. Task 0 covers the account-creation step everything else
+assumes is already done. Deliberately excluded throughout: third-party
 orchestrators like Airflow, and any AWS usage beyond Tasks 5-6 — both
 stay out of scope per this repo's Snowflake-native design.
 
 | # | Category | Folder | What it covers |
 |---|----------|--------|-----------------|
+| 0 | Foundations | `task-00-environment-setup/` | Creating your Snowflake trial and AWS free-tier accounts — the account-level setup this whole repo assumes you already have |
 | 1 | Foundations | `task-01-upload-csv/` | Internal stages, file formats, `COPY INTO`, `ON_ERROR`/`VALIDATION_MODE`, loading messy real-world data |
 | 2 | Foundations | `task-02-generate-huge-data/` | `GENERATOR()`/`SEQ4()` — synthesizing large datasets with pure SQL, no file needed |
 | 3 | Foundations | `task-03-scheduler-continuous-data/` | Snowflake Tasks — scheduling SQL to run repeatedly, warehouse/cost implications |
@@ -144,23 +152,33 @@ stay out of scope per this repo's Snowflake-native design.
 | 100 | Newer table types | `task-100-hybrid-tables/` | Row-oriented, OLTP-style tables with enforced primary keys and fast point lookups. |
 | 101 | Newer table types | `task-101-event-tables/` | The special table type that captures logs/traces from procedures and functions. |
 | 102 | Newer table types | `task-102-iceberg-tables/` | Snowflake reading/writing the open Iceberg table format on external storage. |
-| 103 | Ecosystem & Modeling | `task-103-dbt-basics/` | Wiring up a dbt project against Snowflake and running a first model + test. |
-| 104 | Ecosystem & Modeling | `task-104-medallion-architecture/` | Designing a Bronze/Silver/Gold layered pipeline, what belongs in each layer, and why the boundaries exist. |
-| 105 | Ecosystem & Modeling | `task-105-star-schema-dimensional-modeling/` | Fact tables, dimension tables, and a date dimension, Kimball-style star schema modeling, as a second modeling approach alongside Task 106's Data Vault. |
-| 106 | Ecosystem & Modeling | `task-106-data-vault-modeling/` | Hubs, links, and satellites applied to a small Snowflake schema. |
-| 107 | Ecosystem & Modeling | `task-107-cicd-schema-changes/` | Driving SQL deployments through GitHub Actions instead of hand-running worksheets. |
-| 108 | Ecosystem & Modeling | `task-108-git-integration-workspaces/` | Connecting a Snowflake Workspace to a Git repository for native version-controlled SQL development. |
-| 109 | Ecosystem & Modeling | `task-109-cortex/` | Calling Cortex's built-in LLM functions directly from SQL. |
-| 110 | Ecosystem & Modeling | `task-110-semantic-layer-talk-to-data/` | Building a semantic model so Cortex Analyst can answer natural-language questions over your data directly. |
-| 111 | FinOps | `task-111-account-usage-cost-views/` | Querying WAREHOUSE_METERING_HISTORY, METERING_DAILY_HISTORY, and QUERY_HISTORY in SNOWFLAKE.ACCOUNT_USAGE to see exactly where credits actually went, not just what a warehouse is configured to cost. |
-| 112 | FinOps | `task-112-query-tagging-cost-attribution/` | Using QUERY_TAG and object tags to attribute warehouse spend back to a team, project, or workload, the chargeback/showback pattern. |
-| 113 | FinOps | `task-113-warehouse-right-sizing-methodology/` | Formalizing the SMALL-vs-MEDIUM test from Task 2 into a repeatable process: when a bigger warehouse actually pays for itself, and how to tell from the query profile instead of guessing. |
-| 114 | FinOps | `task-114-auto-suspend-resume-tuning/` | The tradeoff between a short AUTO_SUSPEND (saves idle credits, but pays repeated resume latency) and a long one (stays warm, but burns credits doing nothing), tuned against a real workload's query spacing. |
-| 115 | FinOps | `task-115-budgets-and-alerts/` | Setting a spend threshold with Snowflake Budgets and wiring up a notification so you find out about a cost spike from an alert, not from the bill. |
-| 116 | FinOps | `task-116-storage-cost-monitoring/` | Querying STORAGE_USAGE and TABLE_STORAGE_METRICS to see how much you're paying for active data vs. Time Travel vs. Fail-safe vs. clones, and which of those is actually the expensive one. |
-| 117 | Cert & interview prep | `task-117-snowpro-core-review/` | Working through SnowPro Core exam-style questions against concepts from earlier tasks. |
-| 118 | Cert & interview prep | `task-118-rapid-fire-drills/` | Quick-recall drills on syntax and gotchas across everything covered so far. |
-| 119 | Cert & interview prep | `task-119-mock-interview/` | A simulated Sr. DBE interview covering design/tradeoff questions, not just syntax. |
+| 103 | dbt | `task-103-dbt-basics/` | Wiring up a dbt project against Snowflake and running a first model + test. |
+| 104 | dbt | `task-104-dbt-sources-staging/` | Declaring raw tables as dbt sources() instead of hardcoding table names, and the staging-layer convention of one staging model per source table doing only light renaming/casting. |
+| 105 | dbt | `task-105-dbt-ref-and-dag/` | Using ref() instead of hardcoded table names so dbt can infer dependency order automatically, and reading the resulting DAG. |
+| 106 | dbt | `task-106-dbt-schema-tests/` | The four built-in generic tests declared in YAML, and what each one actually catches. |
+| 107 | dbt | `task-107-dbt-custom-tests/` | Writing your own SQL-based test when the four generic tests aren't enough to express a real business rule. |
+| 108 | dbt | `task-108-dbt-macros-jinja/` | Writing a reusable macro with Jinja to stop copy-pasting the same SQL pattern across models. |
+| 109 | dbt | `task-109-dbt-incremental-models/` | Materializing a model so it only processes new/changed rows on subsequent runs instead of rebuilding the whole table every time. |
+| 110 | dbt | `task-110-dbt-snapshots/` | Capturing how a mutable source table's rows change over time using dbt's built-in Type 2 slowly-changing-dimension pattern. |
+| 111 | dbt | `task-111-dbt-seeds/` | Version-controlling small static reference/lookup data as CSV files that dbt loads directly into tables. |
+| 112 | dbt | `task-112-dbt-docs-dag-viz/` | Generating dbt's documentation site and visual DAG so a model's lineage is self-documenting instead of tribal knowledge. |
+| 113 | dbt | `task-113-dbt-deployment-cicd/` | Running dbt on a schedule/in a pipeline (dbt Cloud vs. a self-hosted dbt run in GitHub Actions) instead of only ever running it from your laptop. |
+| 114 | Ecosystem & Modeling | `task-114-medallion-architecture/` | Designing a Bronze/Silver/Gold layered pipeline, what belongs in each layer, and why the boundaries exist. |
+| 115 | Ecosystem & Modeling | `task-115-star-schema-dimensional-modeling/` | Fact tables, dimension tables, and a date dimension, Kimball-style star schema modeling, as a second modeling approach alongside Task 116's Data Vault. |
+| 116 | Ecosystem & Modeling | `task-116-data-vault-modeling/` | Hubs, links, and satellites applied to a small Snowflake schema. |
+| 117 | Ecosystem & Modeling | `task-117-cicd-schema-changes/` | Driving SQL deployments through GitHub Actions instead of hand-running worksheets. |
+| 118 | Ecosystem & Modeling | `task-118-git-integration-workspaces/` | Connecting a Snowflake Workspace to a Git repository for native version-controlled SQL development. |
+| 119 | Ecosystem & Modeling | `task-119-cortex/` | Calling Cortex's built-in LLM functions directly from SQL. |
+| 120 | Ecosystem & Modeling | `task-120-semantic-layer-talk-to-data/` | Building a semantic model so Cortex Analyst can answer natural-language questions over your data directly. |
+| 121 | FinOps | `task-121-account-usage-cost-views/` | Querying WAREHOUSE_METERING_HISTORY, METERING_DAILY_HISTORY, and QUERY_HISTORY in SNOWFLAKE.ACCOUNT_USAGE to see exactly where credits actually went, not just what a warehouse is configured to cost. |
+| 122 | FinOps | `task-122-query-tagging-cost-attribution/` | Using QUERY_TAG and object tags to attribute warehouse spend back to a team, project, or workload, the chargeback/showback pattern. |
+| 123 | FinOps | `task-123-warehouse-right-sizing-methodology/` | Formalizing the SMALL-vs-MEDIUM test from Task 2 into a repeatable process: when a bigger warehouse actually pays for itself, and how to tell from the query profile instead of guessing. |
+| 124 | FinOps | `task-124-auto-suspend-resume-tuning/` | The tradeoff between a short AUTO_SUSPEND (saves idle credits, but pays repeated resume latency) and a long one (stays warm, but burns credits doing nothing), tuned against a real workload's query spacing. |
+| 125 | FinOps | `task-125-budgets-and-alerts/` | Setting a spend threshold with Snowflake Budgets and wiring up a notification so you find out about a cost spike from an alert, not from the bill. |
+| 126 | FinOps | `task-126-storage-cost-monitoring/` | Querying STORAGE_USAGE and TABLE_STORAGE_METRICS to see how much you're paying for active data vs. Time Travel vs. Fail-safe vs. clones, and which of those is actually the expensive one. |
+| 127 | Cert & interview prep | `task-127-snowpro-core-review/` | Working through SnowPro Core exam-style questions against concepts from earlier tasks. |
+| 128 | Cert & interview prep | `task-128-rapid-fire-drills/` | Quick-recall drills on syntax and gotchas across everything covered so far. |
+| 129 | Cert & interview prep | `task-129-mock-interview/` | A simulated Sr. DBE interview covering design/tradeoff questions, not just syntax. |
 
 ## Why no data files are committed here
 Generated CSVs are large and reproducible from `gen_iot_data.py` — see
@@ -169,10 +187,12 @@ hard-rejects anything over 100MB per file anyway. Regenerate locally,
 or ask why that matters as part of Task 1's understanding check.
 
 ## How to use this repo
-1. Work through the task folders in order.
-2. Actually run the SQL in your own Snowflake trial worksheet — don't
+1. Start with Task 0 if you haven't set up your Snowflake trial (and
+   AWS, if you're doing Tasks 5-6) yet.
+2. Work through the task folders in order.
+3. Actually run the SQL in your own Snowflake trial worksheet — don't
    just read it.
-3. Answer each task's understanding questions before moving to the
+4. Answer each task's understanding questions before moving to the
    next one.
-4. Commit your own notes/answers if you want a record of your
+5. Commit your own notes/answers if you want a record of your
    progress (e.g. add an `ANSWERS.md` per task folder).

@@ -1,7 +1,7 @@
--- Task 103 — dbt basics on Snowflake
+-- Task 106 — dbt schema tests (unique, not_null, relationships, accepted_values)
 -- Category: dbt
 --
--- Goal: Wiring up a dbt project against Snowflake and running a first model + test.
+-- Goal: The four built-in generic tests declared in YAML, and what each one actually catches.
 --
 -- TODO: write the walkthrough SQL for this task.
 

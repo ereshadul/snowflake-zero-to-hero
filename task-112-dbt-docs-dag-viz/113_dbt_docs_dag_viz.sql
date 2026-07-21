@@ -1,7 +1,7 @@
--- Task 103 — dbt basics on Snowflake
+-- Task 112 — dbt docs and the dependency graph
 -- Category: dbt
 --
--- Goal: Wiring up a dbt project against Snowflake and running a first model + test.
+-- Goal: Generating dbt's documentation site and visual DAG so a model's lineage is self-documenting instead of tribal knowledge.
 --
 -- TODO: write the walkthrough SQL for this task.
 

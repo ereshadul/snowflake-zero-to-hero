@@ -1,7 +1,7 @@
--- Task 103 — dbt basics on Snowflake
+-- Task 105 — dbt ref() and building a model DAG
 -- Category: dbt
 --
--- Goal: Wiring up a dbt project against Snowflake and running a first model + test.
+-- Goal: Using ref() instead of hardcoded table names so dbt can infer dependency order automatically, and reading the resulting DAG.
 --
 -- TODO: write the walkthrough SQL for this task.
 

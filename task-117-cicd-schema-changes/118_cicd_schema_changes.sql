@@ -1,7 +1,7 @@
--- Task 103 — dbt basics on Snowflake
--- Category: dbt
+-- Task 117 — CI/CD for schema changes
+-- Category: Ecosystem
 --
--- Goal: Wiring up a dbt project against Snowflake and running a first model + test.
+-- Goal: Driving SQL deployments through GitHub Actions instead of hand-running worksheets.
 --
 -- TODO: write the walkthrough SQL for this task.
 

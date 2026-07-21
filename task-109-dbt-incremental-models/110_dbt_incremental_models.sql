@@ -1,7 +1,7 @@
--- Task 103 — dbt basics on Snowflake
+-- Task 109 — dbt incremental models
 -- Category: dbt
 --
--- Goal: Wiring up a dbt project against Snowflake and running a first model + test.
+-- Goal: Materializing a model so it only processes new/changed rows on subsequent runs instead of rebuilding the whole table every time.
 --
 -- TODO: write the walkthrough SQL for this task.
 

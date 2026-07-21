@@ -1,7 +1,7 @@
--- Task 103 — dbt basics on Snowflake
+-- Task 104 — dbt sources and staging models
 -- Category: dbt
 --
--- Goal: Wiring up a dbt project against Snowflake and running a first model + test.
+-- Goal: Declaring raw tables as dbt sources() instead of hardcoding table names, and the staging-layer convention of one staging model per source table doing only light renaming/casting.
 --
 -- TODO: write the walkthrough SQL for this task.
 

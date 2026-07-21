@@ -1,7 +1,7 @@
--- Task 103 — dbt basics on Snowflake
--- Category: dbt
+-- Task 127 — SnowPro Core review
+-- Category: Cert & interview prep
 --
--- Goal: Wiring up a dbt project against Snowflake and running a first model + test.
+-- Goal: Working through SnowPro Core exam-style questions against concepts from earlier tasks.
 --
 -- TODO: write the walkthrough SQL for this task.
 

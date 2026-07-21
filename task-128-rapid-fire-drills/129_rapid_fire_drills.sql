@@ -1,7 +1,7 @@
--- Task 103 — dbt basics on Snowflake
--- Category: dbt
+-- Task 128 — Rapid-fire drills
+-- Category: Cert & interview prep
 --
--- Goal: Wiring up a dbt project against Snowflake and running a first model + test.
+-- Goal: Quick-recall drills on syntax and gotchas across everything covered so far.
 --
 -- TODO: write the walkthrough SQL for this task.
 

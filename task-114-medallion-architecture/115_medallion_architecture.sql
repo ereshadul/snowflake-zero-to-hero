@@ -1,7 +1,8 @@
--- Task 103 — dbt basics on Snowflake
--- Category: dbt
+-- Task 114 — Medallion Architecture
+-- Category: Ecosystem & Modeling
 --
--- Goal: Wiring up a dbt project against Snowflake and running a first model + test.
+-- Goal: Designing a Bronze/Silver/Gold layered pipeline -- what
+-- belongs in each layer, and why the boundaries exist.
 --
 -- TODO: write the walkthrough SQL for this task.
 

@@ -1,7 +1,9 @@
--- Task 103 — dbt basics on Snowflake
--- Category: dbt
+-- Task 115 — Star schema & dimensional modeling
+-- Category: Ecosystem & Modeling
 --
--- Goal: Wiring up a dbt project against Snowflake and running a first model + test.
+-- Goal: Fact tables, dimension tables, and a date dimension --
+-- Kimball-style star schema modeling, as a second modeling approach
+-- alongside Task 116's Data Vault.
 --
 -- TODO: write the walkthrough SQL for this task.
 

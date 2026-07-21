@@ -1,7 +1,7 @@
--- Task 103 — dbt basics on Snowflake
--- Category: dbt
+-- Task 119 — Snowflake Cortex
+-- Category: Ecosystem
 --
--- Goal: Wiring up a dbt project against Snowflake and running a first model + test.
+-- Goal: Calling Cortex's built-in LLM functions directly from SQL.
 --
 -- TODO: write the walkthrough SQL for this task.
 

@@ -1,18 +1,18 @@
-# Task 103 — dbt basics on Snowflake
+# Task 107 — dbt custom and singular tests
 
 **Category:** dbt
 
 ## Goal
-Wiring up a dbt project against Snowflake and running a first model + test.
+Writing your own SQL-based test when the four generic tests aren't enough to express a real business rule.
 
 ## Steps
-1. Run `104_dbt_basics.sql`.
+1. Run `108_dbt_custom_tests.sql`.
 2. Work through it section by section against your own Snowflake trial
    — don't just read it.
 3. Answer the understanding check below before moving to the next task.
 
 ## Understanding check
-See the bottom of `104_dbt_basics.sql`. Answer by actually running the
+See the bottom of `108_dbt_custom_tests.sql`. Answer by actually running the
 diagnostic queries it points to, not from memory.
 
 *(Status: scaffolded — SQL content not yet written.)*

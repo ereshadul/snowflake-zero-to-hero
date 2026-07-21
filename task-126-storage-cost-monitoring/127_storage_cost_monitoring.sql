@@ -1,7 +1,9 @@
--- Task 103 — dbt basics on Snowflake
--- Category: dbt
+-- Task 126 — Storage cost monitoring
+-- Category: FinOps
 --
--- Goal: Wiring up a dbt project against Snowflake and running a first model + test.
+-- Goal: Querying STORAGE_USAGE and TABLE_STORAGE_METRICS to see how
+-- much you're paying for active data vs. Time Travel vs. Fail-safe
+-- vs. clones -- and which of those is actually the expensive one.
 --
 -- TODO: write the walkthrough SQL for this task.
 

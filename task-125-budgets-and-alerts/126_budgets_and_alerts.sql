@@ -1,7 +1,9 @@
--- Task 103 — dbt basics on Snowflake
--- Category: dbt
+-- Task 125 — Snowflake Budgets & spend notifications
+-- Category: FinOps
 --
--- Goal: Wiring up a dbt project against Snowflake and running a first model + test.
+-- Goal: Setting a spend threshold with Snowflake Budgets and wiring
+-- up a notification so you find out about a cost spike from an
+-- alert, not from the bill.
 --
 -- TODO: write the walkthrough SQL for this task.
 

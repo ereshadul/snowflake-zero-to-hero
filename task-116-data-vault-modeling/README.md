@@ -1,18 +1,18 @@
-# Task 103 — dbt basics on Snowflake
+# Task 116 — Data Vault modeling
 
-**Category:** dbt
+**Category:** Ecosystem
 
 ## Goal
-Wiring up a dbt project against Snowflake and running a first model + test.
+Hubs, links, and satellites applied to a small Snowflake schema.
 
 ## Steps
-1. Run `104_dbt_basics.sql`.
+1. Run `107_data_vault_modeling.sql`.
 2. Work through it section by section against your own Snowflake trial
    — don't just read it.
 3. Answer the understanding check below before moving to the next task.
 
 ## Understanding check
-See the bottom of `104_dbt_basics.sql`. Answer by actually running the
+See the bottom of `107_data_vault_modeling.sql`. Answer by actually running the
 diagnostic queries it points to, not from memory.
 
 *(Status: scaffolded — SQL content not yet written.)*

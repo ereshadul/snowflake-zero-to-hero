@@ -1,7 +1,7 @@
--- Task 103 — dbt basics on Snowflake
+-- Task 111 — dbt seeds
 -- Category: dbt
 --
--- Goal: Wiring up a dbt project against Snowflake and running a first model + test.
+-- Goal: Version-controlling small static reference/lookup data as CSV files that dbt loads directly into tables.
 --
 -- TODO: write the walkthrough SQL for this task.
 
